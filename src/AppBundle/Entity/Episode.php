@@ -52,7 +52,7 @@ class Episode
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="published_at", type="datetime")
+     * @ORM\Column(name="published_at", type="datetime", options={"default":"CURRENT_TIMESTAMP"})
      */
     private $publishedAt;
 
@@ -187,4 +187,3 @@ class Episode
         return $this->publishedAt;
     }
 }
-

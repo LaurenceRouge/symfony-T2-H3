@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class EpisodesType extends AbstractType
+class EpisodeType extends AbstractType
 {
     /**
      * {@inheritdoc}
@@ -22,7 +22,7 @@ class EpisodesType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Entity\Episodes'
+            'data_class' => 'AppBundle\Entity\Episode'
         ));
     }
 
@@ -31,7 +31,7 @@ class EpisodesType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'appbundle_episodes';
+        return 'appbundle_episode';
     }
 
 

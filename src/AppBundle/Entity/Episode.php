@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Episodes
+ * Episode
  *
- * @ORM\Table(name="episodes")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\EpisodesRepository")
+ * @ORM\Table(name="episode")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\EpisodeRepository")
  */
-class Episodes
+class Episode
 {
     /**
      * @var int
@@ -24,35 +24,35 @@ class Episodes
     /**
      * @var string
      *
-     * @ORM\Column(name="Title", type="string", length=255)
+     * @ORM\Column(name="title", type="string", length=255)
      */
     private $title;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="Nb_episode", type="integer")
+     * @ORM\Column(name="nb_episode", type="integer")
      */
     private $nbEpisode;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="Nb_season", type="integer")
+     * @ORM\Column(name="nb_season", type="integer")
      */
     private $nbSeason;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="File_video", type="blob")
+     * @ORM\Column(name="file_video", type="blob")
      */
     private $fileVideo;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="Published_at", type="datetime")
+     * @ORM\Column(name="published_at", type="datetime")
      */
     private $publishedAt;
 
@@ -72,7 +72,7 @@ class Episodes
      *
      * @param string $title
      *
-     * @return Episodes
+     * @return Episode
      */
     public function setTitle($title)
     {
@@ -96,7 +96,7 @@ class Episodes
      *
      * @param integer $nbEpisode
      *
-     * @return Episodes
+     * @return Episode
      */
     public function setNbEpisode($nbEpisode)
     {
@@ -120,7 +120,7 @@ class Episodes
      *
      * @param integer $nbSeason
      *
-     * @return Episodes
+     * @return Episode
      */
     public function setNbSeason($nbSeason)
     {
@@ -144,7 +144,7 @@ class Episodes
      *
      * @param string $fileVideo
      *
-     * @return Episodes
+     * @return Episode
      */
     public function setFileVideo($fileVideo)
     {
@@ -168,7 +168,7 @@ class Episodes
      *
      * @param \DateTime $publishedAt
      *
-     * @return Episodes
+     * @return Episode
      */
     public function setPublishedAt($publishedAt)
     {

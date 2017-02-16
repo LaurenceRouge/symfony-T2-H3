@@ -18,7 +18,7 @@
         <tbody>
         {% for episode in episodes %}
             <tr>
-                <td><a href="{{ path('episodes_show', { 'id': episode.id }) }}">{{ episode.id }}</a></td>
+                <td><a href="{{ path('episode_show', { 'id': episode.id }) }}">{{ episode.id }}</a></td>
                 <td>{{ episode.title }}</td>
                 <td>{{ episode.nbEpisode }}</td>
                 <td>{{ episode.nbSeason }}</td>
@@ -27,10 +27,10 @@
                 <td>
                     <ul>
                         <li>
-                            <a href="{{ path('episodes_show', { 'id': episode.id }) }}">show</a>
+                            <a href="{{ path('episode_show', { 'id': episode.id }) }}">show</a>
                         </li>
                         <li>
-                            <a href="{{ path('episodes_edit', { 'id': episode.id }) }}">edit</a>
+                            <a href="{{ path('episode_edit', { 'id': episode.id }) }}">edit</a>
                         </li>
                     </ul>
                 </td>
@@ -41,7 +41,7 @@
 
     <ul>
         <li>
-            <a href="{{ path('episodes_new') }}">Create a new episode</a>
+            <a href="{{ path('episode_new') }}">Create a new episode</a>
         </li>
     </ul>
 {% endblock %}

@@ -2,9 +2,11 @@
 
 namespace AppBundle\Form;
 
+use AppBundle\Entity\Episode;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 
 class EpisodeType extends AbstractType
 {
@@ -13,7 +15,7 @@ class EpisodeType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('title')->add('nbEpisode')->add('nbSeason')->add('fileVideo')->add('publishedAt')        ;
+        $builder->add('title')->add('nbEpisode')->add('nbSeason')->add('filevideo', FileType::class, array('label' => 'FileVideo (mp4 file)'))->add('publishedAt')        ;
     }
     
     /**

@@ -3,9 +3,11 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Episode;
+use AppBundle\Form\EpisodeType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Episode controller.
@@ -48,7 +50,26 @@ class EpisodeController extends Controller
             $em->persist($episode);
             $em->flush($episode);
 
-            return $this->redirectToRoute('episode_show', array('id' => $episode->getId()));
+            // $file stores the uploaded PDF file
+            /** @var Symfony\Component\HttpFoundation\File\UploadedFile $file */
+            $file = $episode->getFileVideo();
+
+            // Generate a unique name for the file before saving it
+            $fileName = $this->get('app.filevideo_uploader')->upload($file);
+
+            // Move the file to the directory where videos are stored
+            $file->move(
+                $this->getParameter('filevideo_directory'),
+                $fileName
+            );
+
+            // Update the 'video' property to store the mp4 file name
+            // instead of its contents
+            $episode->setFileVideo($fileName);
+
+            // ... persist the $episode variable or any other work
+
+            return $this->redirectToRoute($this->generateUrl('app_episode_list'), 'episode_show', array('id' => $episode->getId()));
         }
 
         return $this->render('episode/new.html.twig', array(

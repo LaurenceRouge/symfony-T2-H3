@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Episodes list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Nbepisode</th>
+                <th>Nbseason</th>
+                <th>Filevideo</th>
+                <th>Publishedat</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for episode in episodes %}
+            <tr>
+                <td><a href="{{ path('episodes_show', { 'id': episode.id }) }}">{{ episode.id }}</a></td>
+                <td>{{ episode.title }}</td>
+                <td>{{ episode.nbEpisode }}</td>
+                <td>{{ episode.nbSeason }}</td>
+                <td>{{ episode.fileVideo }}</td>
+                <td>{% if episode.publishedAt %}{{ episode.publishedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('episodes_show', { 'id': episode.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('episodes_edit', { 'id': episode.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('episodes_new') }}">Create a new episode</a>
+        </li>
+    </ul>
+{% endblock %}

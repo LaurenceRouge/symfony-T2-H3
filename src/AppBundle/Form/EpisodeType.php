@@ -15,7 +15,7 @@ class EpisodeType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('title')->add('nbEpisode')->add('nbSeason')->add('filevideo', FileType::class, array('label' => 'FileVideo (mp4 file)'))->add('publishedAt')        ;
+        $builder->add('title')->add('nbEpisode')->add('nbSeason')->add('file_video', FileType::class, array('label' => 'File Video'))->add('publishedAt');
     }
     
     /**

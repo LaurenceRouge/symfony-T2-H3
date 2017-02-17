@@ -45,7 +45,7 @@ class Episode
     /**
      * @var string
      *
-     * @ORM\Column(name="file_video", type="blob")
+     * @ORM\Column(name="file_video", type="string", length=255)
      */
     private $fileVideo;
 

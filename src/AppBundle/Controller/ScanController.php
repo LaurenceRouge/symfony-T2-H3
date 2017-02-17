@@ -92,7 +92,7 @@ class ScanController extends Controller
     public function editAction(Request $request, Scan $scan)
     {
         $deleteForm = $this->createDeleteForm($scan);
-        $editForm = $this->createForm('AppBundle\Form\ScanType', $scan);
+        $editForm = $this->createForm('AppBundle\Form\ScanEditType', $scan);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {

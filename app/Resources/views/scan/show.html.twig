@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Scan</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ scan.id }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ scan.title }}</td>
+            </tr>
+            <tr>
+                <th>Nbchapter</th>
+                <td>{{ scan.nbChapter }}</td>
+            </tr>
+            <tr>
+                <th>Nbvolume</th>
+                <td>{{ scan.nbVolume }}</td>
+            </tr>
+            <tr>
+                <th>Filescanname</th>
+                <td>{{ scan.fileScanName }}</td>
+            </tr>
+            <tr>
+                <th>Publishedat</th>
+                <td>{% if scan.publishedAt %}{{ scan.publishedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('scan_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('scan_edit', { 'id': scan.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

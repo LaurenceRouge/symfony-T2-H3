@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Scans list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Nbchapter</th>
+                <th>Nbvolume</th>
+                <th>Filescanname</th>
+                <th>Publishedat</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for scan in scans %}
+            <tr>
+                <td><a href="{{ path('scan_show', { 'id': scan.id }) }}">{{ scan.id }}</a></td>
+                <td>{{ scan.title }}</td>
+                <td>{{ scan.nbChapter }}</td>
+                <td>{{ scan.nbVolume }}</td>
+                <td>{{ scan.fileScanName }}</td>
+                <td>{% if scan.publishedAt %}{{ scan.publishedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('scan_show', { 'id': scan.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('scan_edit', { 'id': scan.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('scan_new') }}">Create a new scan</a>
+        </li>
+    </ul>
+{% endblock %}

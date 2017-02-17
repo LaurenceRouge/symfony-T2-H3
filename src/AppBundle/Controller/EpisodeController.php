@@ -94,7 +94,7 @@ class EpisodeController extends Controller
     public function editAction(Request $request, Episode $episode)
     {
         $deleteForm = $this->createDeleteForm($episode);
-        $editForm = $this->createForm('AppBundle\Form\EpisodeType', $episode);
+        $editForm = $this->createForm('AppBundle\Form\EpisodeEditType', $episode);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
@@ -105,6 +105,7 @@ class EpisodeController extends Controller
 
         return $this->render('episode/edit.html.twig', array(
             'episode' => $episode,
+
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));

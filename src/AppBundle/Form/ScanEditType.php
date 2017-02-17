@@ -8,14 +8,14 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 
-class ScanType extends AbstractType
+class ScanEditType extends AbstractType
 {
     /**
      * {@inheritdoc}
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('title')->add('nbChapter')->add('nbVolume')->add('fileScanName', FileType::class, array('label' => 'Scan File'))->add('publishedAt');
+        $builder->add('title')->add('nbChapter')->add('nbVolume');
     }
     
     /**

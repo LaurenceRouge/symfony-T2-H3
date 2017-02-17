@@ -3,9 +3,11 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Scan;
+use AppBundle\Form\ScanType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Scan controller.
@@ -48,7 +50,15 @@ class ScanController extends Controller
             $em->persist($scan);
             $em->flush($scan);
 
-            return $this->redirectToRoute('scan_show', array('id' => $scan->getId()));
+            // $file stores the uploaded PDF file
+            /** @var Symfony\Component\HttpFoundation\File\UploadedFile $file */
+            $file = $scan->getFileScanName();
+
+            // Update the 'scan' property to store the file name
+            // instead of its contents
+            $scan->setFileScanName($file);
+
+            return $this->redirectToRoute('scan_index');
         }
 
         return $this->render('scan/new.html.twig', array(

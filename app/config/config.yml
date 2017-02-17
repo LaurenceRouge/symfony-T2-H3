@@ -8,6 +8,7 @@ imports:
 parameters:
     locale: en
     filevideos_directory: '%kernel.root_dir%/../web/uploads/episodes'
+    filescans_directory: '%kernel.root_dir%/../web/uploads/scans'
 
 framework:
     #esi:             ~

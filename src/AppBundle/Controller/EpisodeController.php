@@ -58,8 +58,6 @@ class EpisodeController extends Controller
             // instead of its contents
             $episode->setFileVideo($file);
 
-            // ... persist the $episode variable or any other work
-
             return $this->redirectToRoute('episode_index');
         }
 

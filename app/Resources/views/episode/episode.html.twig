@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+{% block title %}KUROKO'S BASKET{% endblock %}
+
+
+{% block body %}
+    <!--  HEADER  -->
+    <header>
+        <div>LOGO</div>
+        <h1>Nom du site</h1>
+        <nav>
+            <ul>
+                <li><a href="#">L'UNIVERS</a></li>
+                <li><a href="#">EPISODES</a></li>
+                <li><a href="#">MANGAS</a></li>
+                <li><a href="#">ACTUALITES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--  CONTENTS  -->
+    <div class="container">
+
+        <div class="content episodes">
+            <div class="content__title">
+                <h2>EPISODES</h2>
+            </div>
+            <ul>
+                {% for item in menu %}
+                    <li><a href="#">SAISON {{ item[0].season }}</a></li>
+                        <ul>
+                            {% for it in item %}
+                                <li><a href="#">EPISODE {{ it.episode }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+
+    <!--  FOOTER  -->
+    <footer>
+        FOOTER
+    </footer>
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        header {
+            background-image: url("/dist/images/HEADER.jpg");
+        }
+    </style>
+{% endblock %}
+

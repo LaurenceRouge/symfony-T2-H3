@@ -10,7 +10,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component
 /**
  * News controller.
  *
- * @Route("news")
+ * @Route("admin/news")
  */
 class NewsController extends Controller
 {

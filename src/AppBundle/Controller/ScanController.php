@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * Scan controller.
  *
- * @Route("scan")
+ * @Route("admin/scan")
  */
 class ScanController extends Controller
 {

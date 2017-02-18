@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * Episode controller.
  *
- * @Route("episode")
+ * @Route("admin/episode")
  */
 class EpisodeController extends Controller
 {

@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c80f6a02-2557-4232-a714-4fe3e50d63c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/EpisodeEditType.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/episodes/309ef8216b27786475f6da0c65b36292.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/episodes/3e1e7fb1e2615848f09626f64fb751e4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/episodes/8fef9d29424ef49bfd6fc38d8e26563a.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/episodes/920d40a8dde6b23e496a8d135ec64303.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/episodes/ac8e8fbcdd2032b6fd5c2cb95a7c45f8.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/episodes/c7b0813c02c9cca07980c129d92f5f47.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/episodes/d3d294b51b015225d9414e961e7824b3.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/episodes/fd60445043c4cc924aaa37a2f2446815.jpeg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/EpisodeController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/EpisodeController.php" />
-    </list>
+    <list default="true" id="c80f6a02-2557-4232-a714-4fe3e50d63c1" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +66,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -106,7 +96,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -148,6 +137,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -185,11 +180,12 @@
       <workItem from="1487242817498" duration="70000" />
       <workItem from="1487255719231" duration="63000" />
       <workItem from="1487347817009" duration="19000" />
+      <workItem from="1487425030839" duration="5000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="299000" />
+    <option name="totallyTimeSpent" value="304000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -225,6 +221,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">

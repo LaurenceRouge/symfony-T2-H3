@@ -110,7 +110,7 @@ class News
      */
     public function setPublishedAt($publishedAt)
     {
-        $this->publishedAt = $publishedAt;
+        $this->publishedAt = new \DateTime();
 
         return $this;
     }

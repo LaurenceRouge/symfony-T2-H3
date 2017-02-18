@@ -45,15 +45,12 @@
             </div>
             <h3>SAISON 1</h3>
             <div class="content__episodes">
-                EPISODES
                 {% for episode in episodes|reverse|slice(0, 5)%}
                     <div class="content__episode">
                         <img src="/uploads/episodes/{{ episode.fileVideo }}" alt="">
                         <p>{{ episode.title }}</p>
                     </div>
                 {% endfor %}
-
-
             </div>
         </div>
 
@@ -66,27 +63,12 @@
             </div>
             <h3>VOLUME 2</h3>
             <div class="content__scans">
-                SCANS
-                <div class="content__scan">
-                    <img src="/dist/images/24scan.jpg" alt="">
-                    <p>CHAP 21</p>
-                </div>
-                <div class="content__scan">
-                    <img src="/dist/images/24scan.jpg" alt="">
-                    <p>CHAP 21</p>
-                </div>
-                <div class="content__scan">
-                    <img src="/dist/images/24scan.jpg" alt="">
-                    <p>CHAP 21</p>
-                </div>
-                <div class="content__scan">
-                    <img src="/dist/images/24scan.jpg" alt="">
-                    <p>CHAP 21</p>
-                </div>
-                <div class="content__scan">
-                    <img src="/dist/images/24scan.jpg" alt="">
-                    <p>CHAP 21</p>
-                </div>
+                {% for scan in scans|reverse|slice(0, 5)%}
+                    <div class="content__episode">
+                        <img src="/uploads/scans/{{ scan.fileScanName }}" alt="">
+                        <p>{{ scan.title }}</p>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>

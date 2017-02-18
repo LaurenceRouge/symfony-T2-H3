@@ -26,6 +26,12 @@ class DefaultController extends Controller
             ->getRepository('AppBundle:Episode');
         $episodes = $repository->findAll();
 
+        // On récupère le repository et les episodes
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('AppBundle:Scan');
+        $scans = $repository->findAll();
+
 
 
 
@@ -34,6 +40,7 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
             'news' => $news,
             'episodes' => $episodes,
+            'scans' => $scans,
         ]);
     }
 }

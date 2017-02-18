@@ -14,14 +14,18 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        // On récupère le repository
+        // On récupère le repository et les news
         $repository = $this->getDoctrine()
             ->getManager()
-            ->getRepository('AppBundle:News')
-        ;
-
-        // On récupère l'entité correspondante à l'id $id
+            ->getRepository('AppBundle:News');
         $news = $repository->findAll();
+
+        // On récupère le repository et les episodes
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('AppBundle:Episode');
+        $episodes = $repository->findAll();
+
 
 
 
@@ -29,6 +33,7 @@ class DefaultController extends Controller
         return $this->render('default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
             'news' => $news,
+            'episodes' => $episodes,
         ]);
     }
 }

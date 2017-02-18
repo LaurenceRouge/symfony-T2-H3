@@ -46,26 +46,14 @@
             <h3>SAISON 1</h3>
             <div class="content__episodes">
                 EPISODES
-                <div class="content__episode">
-                    <img src="/dist/images/episode1.png" alt="">
-                    <p>EPISODE 1</p>
-                </div>
-                <div class="content__episode">
-                    <img src="/dist/images/episode1.png" alt="">
-                    <p>EPISODE 1</p>
-                </div>
-                <div class="content__episode">
-                    <img src="/dist/images/episode1.png" alt="">
-                    <p>EPISODE 1</p>
-                </div>
-                <div class="content__episode">
-                    <img src="/dist/images/episode1.png" alt="">
-                    <p>EPISODE 1</p>
-                </div>
-                <div class="content__episode">
-                    <img src="/dist/images/episode1.png" alt="">
-                    <p>EPISODE 1</p>
-                </div>
+                {% for episode in episodes|reverse|slice(0, 5)%}
+                    <div class="content__episode">
+                        <img src="/uploads/episodes/{{ episode.fileVideo }}" alt="">
+                        <p>{{ episode.title }}</p>
+                    </div>
+                {% endfor %}
+
+
             </div>
         </div>
 

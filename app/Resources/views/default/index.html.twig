@@ -27,13 +27,13 @@
                 Actualités
             </div>
             <img src="/dist/images/Actu.jpg" alt="">
+
             <ul>
-                <li><a href="#">Actu 1</a></li>
-                <li><a href="#">Actu 2</a></li>
-                <li><a href="#">Actu 3</a></li>
-                <li><a href="#">Actu 4</a></li>
-                <li><a href="#">Actu 5</a></li>
+                {% for new in news|reverse|slice(0, 5)%}
+                    <li><a href="#">{{ new.title }}</a></li>
+                {% endfor %}
             </ul>
+
         </div>
 
         <!--  EPISODES  -->

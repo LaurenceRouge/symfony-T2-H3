@@ -15,7 +15,7 @@ class ScanType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('title')->add('nbChapter')->add('nbVolume')->add('fileScanName', FileType::class, array('label' => 'Scan File'))->add('publishedAt');
+        $builder->add('title')->add('nbChapter')->add('nbVolume')->add('thumbnail', FileType::class, array('label' => 'Vignette'))->add('fileScanName', FileType::class, array('label' => 'Scan'))->add('publishedAt');
     }
     
     /**

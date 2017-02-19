@@ -54,7 +54,7 @@
             <div class="content__scans">
                 {% for scan in scans|reverse|slice(0, 5)%}
                     <div class="content__episode">
-                        <img src="/uploads/scans/{{ scan.fileScanName }}" alt="">
+                        <img src="/uploads/scans/{{ scan.thumbnail }}" alt="">
                         <p>{{ scan.title }}</p>
                     </div>
                 {% endfor %}

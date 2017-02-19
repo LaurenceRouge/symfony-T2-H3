@@ -10,7 +10,8 @@
                 <th>Title</th>
                 <th>Nbchapter</th>
                 <th>Nbvolume</th>
-                <th>Filescanname</th>
+                <th>Vignette</th>
+                <th>Scan</th>
                 <th>Publishedat</th>
                 <th>Actions</th>
             </tr>
@@ -21,6 +22,7 @@
                 <td>{{ scan.title }}</td>
                 <td>{{ scan.nbChapter }}</td>
                 <td>{{ scan.nbVolume }}</td>
+                <td>{{ scan.thumbnail }}</td>
                 <td>{{ scan.fileScanName }}</td>
                 <td>{% if scan.publishedAt %}{{ scan.publishedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>

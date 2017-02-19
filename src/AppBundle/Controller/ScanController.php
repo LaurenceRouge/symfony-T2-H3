@@ -50,13 +50,6 @@ class ScanController extends Controller
             $em->persist($scan);
             $em->flush($scan);
 
-            // $file stores the uploaded PDF file
-            /** @var Symfony\Component\HttpFoundation\File\UploadedFile $file */
-            $file = $scan->getFileScanName();
-
-            // Update the 'scan' property to store the file name
-            // instead of its contents
-            $scan->setFileScanName($file);
 
             return $this->redirectToRoute('scan_index');
         }

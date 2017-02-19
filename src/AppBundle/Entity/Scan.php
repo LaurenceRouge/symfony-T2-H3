@@ -64,6 +64,14 @@ class Scan
     private $thumbnail;
 
     /**
+     * Episode constructor.
+     */
+    public function __construct()
+    {
+        $this->publishedAt = new \DateTime();
+    }
+
+    /**
      * Get id
      *
      * @return int

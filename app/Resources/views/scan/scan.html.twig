@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+{% block title %}KUROKO'S BASKET{% endblock %}
+
+
+{% block body %}
+
+    {% include 'header.html.twig' %}
+
+    <!--  CONTENTS  -->
+    <div class="container">
+
+        <div class="content episodes">
+            <div class="content__title">
+                <h2>SCANS</h2>
+            </div>
+            <ul>
+                {% for item in menu %}
+                    <li><a href="#">VOLUME {{ item[0].volume }}</a></li>
+                        <ul>
+                            {% for it in item %}
+                                <li><a href="{{ it.id }}">CHAPITRE {{ it.chapter }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+
+    {% include 'footer.html.twig' %}
+
+{% endblock %}
+

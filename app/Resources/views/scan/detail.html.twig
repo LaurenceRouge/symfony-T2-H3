@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% block title %}KUROKO'S - {{ scan.title }}{% endblock %}
+
+{% block body %}
+    {% include 'header.html.twig' %}
+    <div class="container">
+        <h1>scan</h1>
+
+        <table>
+            <tbody>
+            <tr>
+                <th>Title</th>
+                <td>{{ scan.title }}</td>
+            </tr>
+            <tr>
+                <th>Numéro de la saison</th>
+                <td>{{ scan.nbVolume }}</td>
+            </tr>
+            <tr>
+                <th>Numéro de l'épisode</th>
+                <td>{{ scan.nbChapter }}</td>
+            </tr>
+            <tr>
+                <th>Date de publication</th>
+                <td>{% if scan.publishedAt %}{{ scan.publishedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+            </tbody>
+        </table>
+        <img src="../uploads/scans/{{ scan.fileScanName }}" controls></img>
+    </div>
+    {% include 'footer.html.twig' %}
+{% endblock %}

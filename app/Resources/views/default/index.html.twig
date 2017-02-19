@@ -35,7 +35,7 @@
             <div class="content__episodes">
                 {% for episode in episodes|reverse|slice(0, 5)%}
                     <div class="content__episode">
-                        <img src="/uploads/episodes/{{ episode.thumbnail }}" alt="">
+                        <a href="/episode/{{ episode.id }}"><img src="/uploads/episodes/{{ episode.thumbnail }}" alt=""></a>
                         <p>{{ episode.title }}</p>
                     </div>
                 {% endfor %}
@@ -47,12 +47,12 @@
             <div class="content__title">
                 <img src="/dist/images/iconscan.png" alt="">
                 Derniers Scans
-                <a href="#"> Voir tout </a>
+                <a href="/scan"> Voir tout </a>
             </div>
             <div class="content__scans">
                 {% for scan in scans|reverse|slice(0, 5)%}
                     <div class="content__episode">
-                        <img src="/uploads/scans/{{ scan.thumbnail }}" alt="">
+                        <a href="/scan/{{ scan.id }}"><img src="/uploads/scans/{{ scan.thumbnail }}" alt=""></a>
                         <p>{{ scan.title }}</p>
                     </div>
                 {% endfor %}

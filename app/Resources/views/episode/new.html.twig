@@ -2,6 +2,7 @@
 {% form_theme form 'bootstrap_3_layout.html.twig' %}
 
 {% block body %}
+    {% include 'header.html.twig' %}
 <div class="container">
     <h1>Episode creation</h1>
 
@@ -17,4 +18,6 @@
         </li>
     </ul>
 </div>
+    {% include 'footer.html.twig' %}
 {% endblock %}
+

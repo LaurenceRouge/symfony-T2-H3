@@ -10,7 +10,8 @@
                 <th>Title</th>
                 <th>Nbepisode</th>
                 <th>Nbseason</th>
-                <th>Filevideo</th>
+                <th>Vignette</th>
+                <th>Video</th>
                 <th>Publishedat</th>
                 <th>Actions</th>
             </tr>
@@ -21,6 +22,7 @@
                 <td>{{ episode.title }}</td>
                 <td>{{ episode.nbEpisode }}</td>
                 <td>{{ episode.nbSeason }}</td>
+                <td>{{ episode.thumbnail }}</td>
                 <td>{{ episode.fileVideo }}</td>
                 <td>{% if episode.publishedAt %}{{ episode.publishedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>

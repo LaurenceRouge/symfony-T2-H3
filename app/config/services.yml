@@ -21,6 +21,21 @@ services:
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+    app.thumbnailepisode_uploader:
+            class: AppBundle\FileUploader
+            arguments: ['%filevideos_directory%']
+
+    app.doctrine_thumbnailepisode_listener:
+            class: AppBundle\EventListener\ThumbnailEpisodeUploadListener
+            arguments: ['@app.thumbnailepisode_uploader']
+            tags:
+                - { name: doctrine.event_listener, event: prePersist }
+                - { name: doctrine.event_listener, event: preUpdate }
+
+
+#    service_name:
+#        class: AppBundle\Directory\ClassName
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
     app.filescan_uploader:
             class: AppBundle\FileUploader
             arguments: ['%filescans_directory%']

@@ -36,7 +36,7 @@
             <div class="content__episodes">
                 {% for episode in episodes|reverse|slice(0, 5)%}
                     <div class="content__episode">
-                        <img src="/uploads/episodes/{{ episode.fileVideo }}" alt="">
+                        <img src="/uploads/episodes/{{ episode.thumbnail }}" alt="">
                         <p>{{ episode.title }}</p>
                     </div>
                 {% endfor %}

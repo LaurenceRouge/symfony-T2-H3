@@ -50,13 +50,6 @@ class EpisodeController extends Controller
             $em->persist($episode);
             $em->flush($episode);
 
-            // $file stores the uploaded PDF file
-            /** @var Symfony\Component\HttpFoundation\File\UploadedFile $file */
-            $file = $episode->getFileVideo();
-
-            // Update the 'video' property to store the mp4 file name
-            // instead of its contents
-            $episode->setFileVideo($file);
 
             return $this->redirectToRoute('episode_index');
         }

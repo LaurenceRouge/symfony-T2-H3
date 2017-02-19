@@ -56,6 +56,13 @@ class Episode
      */
     private $publishedAt;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="thumbnail", type="string", length=255)
+     */
+    private $thumbnail;
+
 
     /**
      * Get id
@@ -187,4 +194,22 @@ class Episode
     {
         return $this->publishedAt;
     }
+
+    /**
+     * @return string
+     */
+    public function getThumbnail()
+    {
+        return $this->thumbnail;
+    }
+
+    /**
+     * @param string $thumbnail
+     */
+    public function setThumbnail($thumbnail)
+    {
+        $this->thumbnail = $thumbnail;
+    }
+
+
 }

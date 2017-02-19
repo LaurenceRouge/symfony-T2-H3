@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% block title %}KUROKO'S - {{ episode.title }}{% endblock %}
+
+{% block body %}
+    {% include 'header.html.twig' %}
+    <div class="container">
+        <h1>Episode</h1>
+
+        <table>
+            <tbody>
+            <tr>
+                <th>Title</th>
+                <td>{{ episode.title }}</td>
+            </tr>
+            <tr>
+                <th>Numéro de la saison</th>
+                <td>{{ episode.nbSeason }}</td>
+            </tr>
+            <tr>
+                <th>Numéro de l'épisode</th>
+                <td>{{ episode.nbEpisode }}</td>
+            </tr>
+            <tr>
+                <th>Date de publication</th>
+                <td>{% if episode.publishedAt %}{{ episode.publishedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+            </tbody>
+        </table>
+        <video src="../uploads/episodes/{{ episode.fileVideo }}" controls></video>
+    </div>
+    {% include 'footer.html.twig' %}
+{% endblock %}

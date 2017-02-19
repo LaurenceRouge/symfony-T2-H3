@@ -32,7 +32,6 @@
                 Derniers Episodes
                 <a href="/episode"> Voir tout </a>
             </div>
-            <h3>SAISON 1</h3>
             <div class="content__episodes">
                 {% for episode in episodes|reverse|slice(0, 5)%}
                     <div class="content__episode">
@@ -50,7 +49,6 @@
                 Derniers Scans
                 <a href="#"> Voir tout </a>
             </div>
-            <h3>VOLUME 2</h3>
             <div class="content__scans">
                 {% for scan in scans|reverse|slice(0, 5)%}
                     <div class="content__episode">

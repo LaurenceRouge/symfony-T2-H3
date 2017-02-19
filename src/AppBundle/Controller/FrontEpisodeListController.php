@@ -36,15 +36,26 @@ class FrontEpisodeListController extends Controller
         {
             $num_season = $episode->getNbSeason();
             $num_episode = $episode->getNbEpisode();
+            $id = $episode->getId();
             if(!isset($menu[$num_season]))
                 $menu[$num_season] = array();
-            array_push($menu[$num_season], array('season' => $num_season, 'episode' => $num_episode));
+            array_push($menu[$num_season], array('season' => $num_season, 'episode' => $num_episode, 'id' => $id));
         }
 
 
         return $this->render('episode/episode.html.twig', array(
             'episodes' => $episodes,
             'menu' => $menu,
+        ));
+    }
+
+    /**
+     * @Route("/{id}", name="episode_detail")
+     */
+    public function showAction(Episode $episode)
+    {
+        return $this->render('episode/detail.html.twig', array(
+            'episode' => $episode,
         ));
     }
 }

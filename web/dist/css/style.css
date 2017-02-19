@@ -19,9 +19,15 @@ header {
     height:50px;
     background:#da1c1c;
 }
+
+.menu ul {
+	list-style-type:none;
+}
+
 .menu ul li{
     float:left;
 }
+
 .menu ul li a{
     display:block;
     color:#fff;

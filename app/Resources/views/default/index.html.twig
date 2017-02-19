@@ -5,7 +5,7 @@
 {% block body %}
 
     {% include 'header.html.twig' %}
-
+    
     <!--  CONTENTS  -->
     <div class="container">
 
@@ -19,7 +19,7 @@
 
             <ul>
                 {% for new in news|reverse|slice(0, 5)%}
-                    <li><a href="#">{{ new.title }}</a></li>
+                    <li><a href="/news">{{ new.title }}</a></li>
                 {% endfor %}
             </ul>
 

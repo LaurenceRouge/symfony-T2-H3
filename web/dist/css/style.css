@@ -1,0 +1,40 @@
+/***
+* FONT
+**/
+
+
+
+
+/***
+* HEADER
+**/
+
+header {
+    background-image: url("/dist/images/HEADER.jpg");
+}
+
+/* MENU */
+.menu{
+    width:100%;
+    height:50px;
+    background:#da1c1c;
+}
+.menu ul li{
+    float:left;
+}
+.menu ul li a{
+    display:block;
+    color:#fff;
+    padding:13px 23px;
+}
+
+/***
+* CONTAINER
+**/
+
+
+
+
+/***
+* FOOTER
+**/

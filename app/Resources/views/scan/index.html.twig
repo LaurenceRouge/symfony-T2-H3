@@ -7,7 +7,6 @@
     <table>
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Title</th>
                 <th>Nbchapter</th>
                 <th>Nbvolume</th>
@@ -19,7 +18,6 @@
         <tbody>
         {% for scan in scans %}
             <tr>
-                <td><a href="{{ path('scan_show', { 'id': scan.id }) }}">{{ scan.id }}</a></td>
                 <td>{{ scan.title }}</td>
                 <td>{{ scan.nbChapter }}</td>
                 <td>{{ scan.nbVolume }}</td>

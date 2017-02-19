@@ -7,7 +7,6 @@
     <table>
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Title</th>
                 <th>Nbepisode</th>
                 <th>Nbseason</th>
@@ -19,7 +18,6 @@
         <tbody>
         {% for episode in episodes %}
             <tr>
-                <td><a href="{{ path('episode_show', { 'id': episode.id }) }}">{{ episode.id }}</a></td>
                 <td>{{ episode.title }}</td>
                 <td>{{ episode.nbEpisode }}</td>
                 <td>{{ episode.nbSeason }}</td>

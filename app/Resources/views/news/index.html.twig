@@ -7,7 +7,6 @@
     <table>
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Title</th>
                 <th>Content</th>
                 <th>Publishedat</th>
@@ -17,7 +16,6 @@
         <tbody>
         {% for news in news %}
             <tr>
-                <td><a href="{{ path('news_show', { 'id': news.id }) }}">{{ news.id }}</a></td>
                 <td>{{ news.title }}</td>
                 <td>{{ news.content }}</td>
                 <td>{% if news.publishedAt %}{{ news.publishedAt|date('Y-m-d H:i:s') }}{% endif %}</td>

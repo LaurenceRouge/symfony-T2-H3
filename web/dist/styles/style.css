@@ -176,6 +176,11 @@ a.previous{
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
+.home-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 
 .entity-title{
     margin: 20px 0 10px 0;
@@ -202,6 +207,10 @@ a.previous{
 
 .picture-episode-content{
 
+}
+
+.home-content-img{
+    width:100px;
 }
 
 .title-episode-content{

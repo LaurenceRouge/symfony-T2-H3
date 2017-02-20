@@ -38,12 +38,12 @@
             <a href="/episode">voir tous les épisodes</a>
         </h2>
 
-        <div class="episodes-content">
+        <div class="home-content  episodes-content">
 
             {% for episode in episodes|reverse|slice(0, 15)%}
                 <div class="episode-content">
                     <div class="picture-episode-content">
-                        <img src="/uploads/episodes/{{ episode.thumbnail }}" alt="">
+                        <img src="/uploads/episodes/{{ episode.thumbnail }}" alt="" class="home-content-img">
                     </div>
                     <div class="title-episode-content">
                         <div><a href="/episode/{{ episode.id }}">{{ episode.title }}</a></div>
@@ -61,12 +61,12 @@
             <a href="/scan">voir tout les scans</a>
         </h2>
 
-        <div class="scans-content">
+        <div class="home-content scans-content">
 
             {% for scan in scans|reverse|slice(0, 15)%}
                 <div class="scan-content">
                     <div class="picture-scan-content">
-                        <img src="/uploads/scans/{{ scan.thumbnail }}" alt="">
+                        <img src="/uploads/scans/{{ scan.thumbnail }}" alt="" class="home-content-img">
                     </div>
                     <div class="title-scan-content">
                         <div><a href="/scan/{{ scan.id }}">Tome n°{{ scan.title }}</a></div>

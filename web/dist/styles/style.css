@@ -94,7 +94,7 @@ nav.fixed{
     width:1200px;
 }
 
-.menu-button:target {
+nav li.active a {
     padding: 0 21px;
     line-height: 44px;
     color: #fff;
@@ -126,7 +126,7 @@ h2{
     max-width:80%;
 }
 h3{
-    font-size: 20px;
+    font-size: 15px;
     display: block;
     color: #5C5C5C;
     font-weight: bold;
@@ -177,16 +177,62 @@ a.previous{
     border-radius: 5px;
 }
 
+.entity-title{
+    margin: 20px 0 10px 0;
+    font-size: 1.5em;
+    line-height: 1em;
+    padding: 0 0 8px 0;
+    border-bottom: 1px solid #da1c1c;
+    text-align: inherit;
+    text-transform: inherit;
+}
+
+.episodes-content{
+    width: 25%;
+    min-width: 150px;
+}
+
+.episode-content{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    width: 25%;
+    min-width: 150px;
+}
+
+.picture-episode-content{
+
+}
+
+.title-episode-content{
+
+}
+
+.scan-content{
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    min-width: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.title-episode-content, .title-scan-content{
+    text-align: left;
+    margin: 5px 0 5px 0;
+}
+
 /***
 * FOOTER
 **/
 
 footer{
-    width:821px;
+    width:1200px;
     margin:auto;
     background-color:#3d3d3d;
     position: relative;
-    height: 48px;
+    height: 300px;
     clear:both;
 
 }

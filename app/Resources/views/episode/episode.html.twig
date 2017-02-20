@@ -7,27 +7,29 @@
     {% include 'header.html.twig' %}
 
     <!--  CONTENTS  -->
-    <div class="container">
 
-        <div class="content episodes">
-            <div class="content__title">
-                <h2>EPISODES</h2>
-            </div>
+    <h2 class="episodes entity-title">
+        TOUS LES ÉPISODES
+    </h2>
+
+    <div class="episodes-content">
+
+        {% for item in menu %}
+                <h3 class="season-title"><a href="#">SAISON {{ item[0].season }}</a></h3>
             <ul>
-                {% for item in menu %}
-                    <li><a href="#">SAISON {{ item[0].season }}</a></li>
-                        <ul>
-                            {% for it in item %}
-                                <li><a href="{{ it.id }}">EPISODE {{ it.episode }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-
+                {% for it in item %}
+                    <div class="picture-episode-content">
+                    </div>
+                    <li><a href="{{ it.id }}">EPISODE {{ it.episode }}</a></li>
                 {% endfor %}
             </ul>
-        </div>
+            </>
+
+        {% endfor %}
+
 
     </div>
+
 
     {% include 'footer.html.twig' %}
 

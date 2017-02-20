@@ -33,12 +33,19 @@ __2. Create and update database__
  Install zip in /web/uploads directory.
  Now update database data by importing .sql file in phpMyAdmin.
  
+ __3. Run server__
+ ```sh
+   $ php bin/console server:start localhost:8081
+  ```
  
  You can connect to the back-office by login with name : username and password : username
  
   That's all !
+  
  
- __3. Create a new admin__
+ __Back Office : Create a new admin__
+ 
+ You can create a new admin by using :
 ```sh
   $ php bin/console fos:user:create username --super-admin
  ```

@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block title %}KUROKO'S - Personnages{% endblock %}
+
+{% block body %}
+    {% include 'header.html.twig' %}
+    <div class="container">
+        <h1>Personnages</h1>
+        <ul>
+            {% for api in apis %}
+                <li><a href="#">{{ api.name }}</a></li>
+            {% endfor %}
+        </ul>
+
+    </div>
+    {% include 'footer.html.twig' %}
+{% endblock %}

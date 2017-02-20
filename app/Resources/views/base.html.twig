@@ -2,14 +2,23 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}KUROKO'S UNIVERS{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
+        <!--|if lt IE 9]>
+            <script src="http://html5shiv.google.com/svn/trunk/html5.js"
+        ><![endif]-->
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <meta name="keywords" content="KUROKO'S UNIVERS, Kuroko no Basuke, basket, anime, mangas, vf, vostfr" />
+        <meta name="description" content="Sur KUROKO'S UNIVERS, retrouvez tous l'univers de votre manga prefere kuroko no basuke. Suivez-nous quotidiennement pour etre au courant des dernière actualites" />
+        <meta charset="utf-8"/>
         <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="/dist/css/style.css">
+        <link rel="stylesheet" href="/dist/styles/reset.css">
+        <link rel="stylesheet" href="/dist/styles/style.css">
     </head>
     <body>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
+    <script type="text/javascript" src="/dist/scripts/libs/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/dist/scripts/app/main.js"></script>
 </html>

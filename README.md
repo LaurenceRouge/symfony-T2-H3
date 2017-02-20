@@ -1,7 +1,8 @@
 Kuroko's Universe
 ==========================
 
-### Team 05 composition - Alliance Bronies
+Team 05 composition - Alliance Bronies
+-------
 
 - Pierre Trotsky -- [@PierreTrot](https://github.com/PierreTrot)
 - Jennyfer Millet -- [@Jennyfer-M](https://github.com/Jennyfer-M)
@@ -10,7 +11,8 @@ Kuroko's Universe
 - Laurence Rouge  -- [@LaurenceRouge](https://github.com/LaurenceRouge)
 
 
-##Config Requirements
+Config Requirements
+-------
 - php7.1.0 
 - composer
 
@@ -53,7 +55,8 @@ __2. Create and update database__
 
 
 
-###Commit Nomenclature
+Commit Nomenclature
+-------
 **type[scope]: description**
 - type = Type of the changes ("initialize", "add", “fix”, “style”, “feature”, “test” etc.)
 - scope = Where the changes are (“header”, “home”, “articles”, "global" etc.)

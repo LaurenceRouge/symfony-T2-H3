@@ -18,7 +18,7 @@
                 <a href="/news">voir toutes les news</a>
             </h2>
             <div class="content news">
-
+                <img src="/dist/images/Actu.jpg" alt="">
                 {% for new in news|reverse|slice(0, 5)%}
                     <div class="news-content">
                         <div class="picture-news-content">
@@ -65,7 +65,7 @@
 
             <div class="scans-content">
 
-                {% for scan in scans|reverse|slice(0, 7)%}
+                {% for scan in scans|reverse|slice(0, 6)%}
                     <div class="scan-content">
                         <a href="/scan/{{ scan.id }}"><img src="/uploads/scans/{{ scan.thumbnail }}" alt="" class="picture-scan-content"></a>
                         <div class="title-scan-content">

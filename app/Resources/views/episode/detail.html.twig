@@ -4,29 +4,28 @@
 {% block body %}
     {% include 'header.html.twig' %}
     <div class="container">
-        <h1>Episode</h1>
+        <section>
+            <div class="entity-title">
+                <h1>{{ episode.title }}</h1>
+            </div>
+            <div class="ep_box">
+                <div class="ep_box_content">
+                    <video src="../uploads/episodes/{{ episode.fileVideo }}" controls></video>
+                </div>
+            </div>
+            <div class="new_content">
+                <div class="btn_left_right">
+                    <a href="/episode/{{ episode.id - 1 }}" class="btn">Précédent</a>
+                </div>
+                <div class="select_center">
 
-        <table>
-            <tbody>
-            <tr>
-                <th>Title</th>
-                <td>{{ episode.title }}</td>
-            </tr>
-            <tr>
-                <th>Numéro de la saison</th>
-                <td>{{ episode.nbSeason }}</td>
-            </tr>
-            <tr>
-                <th>Numéro de l'épisode</th>
-                <td>{{ episode.nbEpisode }}</td>
-            </tr>
-            <tr>
-                <th>Date de publication</th>
-                <td>{% if episode.publishedAt %}{{ episode.publishedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-            </tr>
-            </tbody>
-        </table>
-        <video src="../uploads/episodes/{{ episode.fileVideo }}" controls></video>
+                </div>
+                <div class="btn_left_right">
+                    <a href="/episode/{{ episode.id + 1 }}" class="btn">Suivant</a>
+                </div>
+            </div>
+        </section>
+
     </div>
     {% include 'footer.html.twig' %}
 {% endblock %}

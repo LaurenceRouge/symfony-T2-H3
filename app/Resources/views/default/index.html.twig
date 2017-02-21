@@ -11,12 +11,13 @@
     <div class="container">
 
         <!--  NEWS  -->
-        <h2 class="news entity-title">
-            <img src="/dist/images/iconscan.png" alt="">
-            ACTUALITÉS -
-            <a href="/news">voir toutes les news</a>
-        </h2>
-        <div class="content news">
+        <div class="home-section">
+            <h2 class="news entity-title">
+                <img src="/dist/images/iconscan.png" alt="">
+                ACTUALITÉS -
+                <a href="/news">voir toutes les news</a>
+            </h2>
+            <div class="content news">
 
                 {% for new in news|reverse|slice(0, 5)%}
                     <div class="news-content">
@@ -29,50 +30,54 @@
                     </div>
                 {% endfor %}
 
+            </div>
         </div>
 
         <!--  EPISODES  -->
-        <h2 class="episodes entity-title">
-            <img src="/dist/images/iconscan.png" alt="">
-            DERNIERS ÉPISODES -
-            <a href="/episode">voir tous les épisodes</a>
-        </h2>
+        <div class="home-section">
+            <h2 class="episodes entity-title">
+                <img src="/dist/images/iconscan.png" alt="">
+                DERNIERS ÉPISODES -
+                <a href="/episode">voir tous les épisodes</a>
+            </h2>
 
-        <div class="episodes-content">
+            <div class="episodes-content">
 
-            {% for episode in episodes|reverse|slice(0, 7)%}
-                <div class="episode-content">
-                    <a href="/episode/{{ episode.id }}"><img src="/uploads/episodes/{{ episode.thumbnail }}" alt="" class="picture-episode-content"></a>
-                    <div class="title-episode-content">
-                        <div><a href="/episode/{{ episode.id }}">{{ episode.title }}</a></div>
+                {% for episode in episodes|reverse|slice(0, 6)%}
+                    <div class="episode-content">
+                        <a href="/episode/{{ episode.id }}"><img src="/uploads/episodes/{{ episode.thumbnail }}" alt="" class="picture-episode-content"></a>
+                        <div class="title-episode-content">
+                            <div><a href="/episode/{{ episode.id }}">{{ episode.title }}</a></div>
+                        </div>
                     </div>
-                </div>
 
-            {% endfor %}
-
+                {% endfor %}
+            </div>
         </div>
 
         <!--  SCANS  -->
-        <h2 class="scans entity-title">
-            <img src="/dist/images/iconscan.png" alt="">
-            DERNIERS SCANS -
-            <a href="/scan">voir tout les scans</a>
-        </h2>
+        <div class="home-section">
+            <h2 class="scans entity-title">
+                <img src="/dist/images/iconscan.png" alt="">
+                DERNIERS SCANS -
+                <a href="/scan">voir tout les scans</a>
+            </h2>
 
-        <div class="scans-content">
+            <div class="scans-content">
 
-            {% for scan in scans|reverse|slice(0, 7)%}
-                <div class="scan-content">
-                    <a href="/scan/{{ scan.id }}"><img src="/uploads/scans/{{ scan.thumbnail }}" alt="" class="picture-scan-content"></a>
-                    <div class="title-scan-content">
-                        <div><a href="/scan/{{ scan.id }}">Tome n°{{ scan.title }}</a></div>
+                {% for scan in scans|reverse|slice(0, 7)%}
+                    <div class="scan-content">
+                        <a href="/scan/{{ scan.id }}"><img src="/uploads/scans/{{ scan.thumbnail }}" alt="" class="picture-scan-content"></a>
+                        <div class="title-scan-content">
+                            <div><a href="/scan/{{ scan.id }}">Tome n°{{ scan.title }}</a></div>
+                        </div>
                     </div>
-                </div>
 
-            {% endfor %}
+                {% endfor %}
+
+            </div>
 
         </div>
-
     </div>
 
     {% include 'footer.html.twig' %}

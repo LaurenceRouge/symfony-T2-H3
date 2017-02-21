@@ -176,6 +176,11 @@ a.previous{
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
+.home-section{
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+}
 
 .entity-title{
     margin: 20px 0 10px 0;
@@ -201,6 +206,11 @@ a.previous{
 }
 
 .picture-episode-content{
+    position: relative;
+    width: 130px;
+}
+
+.picture-scan-content{
     position: relative;
     width: 130px;
 }

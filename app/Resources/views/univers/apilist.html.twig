@@ -14,7 +14,7 @@
         <div class="team miracle">
             <div class="team-header">
                 <h2>Génération Miracle</h2>
-                <div class="rect"></div>
+                <div class="rect" style="background-color: #CFDCED"></div>
             </div>
             <div class="team-prez">
                 {% for api in apis %}
@@ -31,7 +31,7 @@
         <div class="team seirin">
             <div class="team-header">
             <h2>Lycée Seirin</h2>
-            <div class="rect"></div>
+            <div class="rect" style="background-color: #382C2F"></div>
             </div>
             <div class="team-prez">
                 {% for api in apis %}
@@ -48,7 +48,7 @@
         <div class="team kaijo">
             <div class="team-header">
             <h2>Lycée Kaijō</h2>
-            <div class="rect"></div>
+            <div class="rect" style="background-color: #2B54B0"></div>
             </div>
             <div class="team-prez">
                 {% for api in apis %}
@@ -65,7 +65,7 @@
         <div class="team shutoku">
             <div class="team-header">
             <h2>Lycée Shūtoku</h2>
-            <div class="rect"></div>
+            <div class="rect" style="background-color: #DB8B5A"></div>
             </div>
             <div class="team-prez">
                 {% for api in apis %}
@@ -82,7 +82,7 @@
         <div class="team too">
             <div class="team-header">
             <h2>Académie Tōō</h2>
-            <div class="rect"></div>
+            <div class="rect" style="background-color: #98765C"></div>
             </div>
             <div class="team-prez">
                 {% for api in apis %}
@@ -98,12 +98,12 @@
 
         <div class="team yosen">
             <div class="team-header">
-            <h2>Lycée Yōsen</h2>
-            <div class="rect"></div>
+            <h2>Lycée Kirisaki Daīchi</h2>
+            <div class="rect" style="background-color: #2B767C"></div>
             </div>
             <div class="team-prez">
                 {% for api in apis %}
-                    {% if api.team == "Lycée Yōsen" %}
+                    {% if api.team == "Lycée Kirisaki Daīchi" %}
                         <div class="character">
                             <img src="{{ api.img }}" alt="">
                             <div class="character-name">{{ api.name }}</div>

@@ -21,7 +21,7 @@ use AppBundle\Entity\News;
 class FrontAPIListController extends Controller
 {
     /**
-     * @Route("/character", name="character")
+     * @Route("/", name="univers")
      */
 
     public function newsAction()

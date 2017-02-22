@@ -16,7 +16,7 @@
 html, body{
     background-repeat:repeat-x;
     background-color:#f2f4f7;
-    font-family:Gotham, arial, sans-serif; font-size:12px;
+    font-family:Gotham, arial, sans-serif; font-size:16px;
     color:#36322b;
     width:auto;
     z-index:-100;
@@ -277,6 +277,27 @@ section{
 /* NEWS */
 
 /* UNIVERS */
+.team{
+    padding: 15px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+.team h1{
+    color: #ddd;
+    font-size: 100px;
+    font-weight: bold;
+}
+.team-prez{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 30px 100px;
+}
+
+.team-prez .character{
+
+}
 
 /* ÉPISODE */
 

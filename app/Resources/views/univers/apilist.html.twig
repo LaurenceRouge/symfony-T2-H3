@@ -4,14 +4,22 @@
 {% block body %}
     {% include 'header.html.twig' %}
     <div class="container">
-        <h1>Personnages</h1>
+        <div class="team">
+            <h1>UNIVERS</h1>
+            <div class="synopsis">
+                C'est la rentrée au club de basket-ball du lycée Seirin et cette année, deux rookies se démarquent… D'un côté, le volcanique Taiga Kagami, fraîchement revenu des États-Unis où il a fait ses armes sous les arceaux. De l'autre, le chétif et très effacé Tetsuya Kuroko dont on murmure qu'il aurait fait partie de l'équipe de basket du collège Teikô, la légendaire “Génération Miracle” ! Et si ces deux joueurs que tout oppose étaient amenés à se compléter à merveille sur le terrain ?
+
+            </div>
+        </div>
         <div class="team miracle">
             <h2>Génération Miracle</h2>
             <div class="team-prez">
                 {% for api in apis %}
                     {% if api.team == "Génération Miracles" %}
-                        <img src="{{ api.img }}" alt="">
-                        <span class="character-name">{{ api.name }}</span>
+                        <div class="character">
+                            <img src="{{ api.img }}" alt="">
+                            <div class="character-name">{{ api.name }}</div>
+                        </div>
                     {% endif %}
                 {% endfor %}
             </div>
@@ -19,11 +27,13 @@
 
         <div class="team seirin">
             <h2>Lycée Seirin</h2>
-            <div class="team-prez"></div>
+            <div class="team-prez">
                 {% for api in apis %}
                     {% if api.team == "Lycée Seirin" %}
-                        <img src="{{ api.img }}" alt="">
-                        <span class="character-name">{{ api.name }}</span>
+                        <div class="character">
+                            <img src="{{ api.img }}" alt="">
+                            <div class="character-name">{{ api.name }}</div>
+                        </div>
                     {% endif %}
                 {% endfor %}
             </div>
@@ -34,20 +44,24 @@
             <div class="team-prez">
                 {% for api in apis %}
                     {% if api.team == "Lycée Kaijō" %}
-                        <img src="{{ api.img }}" alt="">
-                        <span class="character-name">{{ api.name }}</span>
+                        <div class="character">
+                            <img src="{{ api.img }}" alt="">
+                            <div class="character-name">{{ api.name }}</div>
+                        </div>
                     {% endif %}
                 {% endfor %}
             </div>
         </div>
 
-        <div class="team shutiku">
+        <div class="team shutoku">
             <h2>Lycée Shūtoku</h2>
             <div class="team-prez">
                 {% for api in apis %}
                     {% if api.team == "Lycée Shūtoku" %}
-                        <img src="{{ api.img }}" alt="">
-                        <span class="character-name">{{ api.name }}</span>
+                        <div class="character">
+                            <img src="{{ api.img }}" alt="">
+                            <div class="character-name">{{ api.name }}</div>
+                        </div>
                     {% endif %}
                 {% endfor %}
             </div>
@@ -58,8 +72,10 @@
             <div class="team-prez">
                 {% for api in apis %}
                     {% if api.team == "Académie Tōō" %}
-                        <img src="{{ api.img }}" alt="">
-                        <span class="character-name">{{ api.name }}</span>
+                        <div class="character">
+                            <img src="{{ api.img }}" alt="">
+                            <div class="character-name">{{ api.name }}</div>
+                        </div>
                     {% endif %}
                 {% endfor %}
             </div>
@@ -70,15 +86,15 @@
             <div class="team-prez">
                 {% for api in apis %}
                     {% if api.team == "Lycée Yōsen" %}
-                        <img src="{{ api.img }}" alt="">
-                        <span class="character-name">{{ api.name }}</span>
+                        <div class="character">
+                            <img src="{{ api.img }}" alt="">
+                            <div class="character-name">{{ api.name }}</div>
+                        </div>
                     {% endif %}
                 {% endfor %}
             </div>
         </div>
 
-
-
-    </div>
     {% include 'footer.html.twig' %}
+    </div>
 {% endblock %}

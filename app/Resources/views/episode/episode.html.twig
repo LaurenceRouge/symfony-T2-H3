@@ -9,16 +9,17 @@
     <!--  CONTENTS  -->
 
     <div class="container">
-        <section>
-            <div class="episodes entity-title">
-                <h1>TOUS LES ÉPISODES</h1>
+            <div class="episodes">
+                <h1>ÉPISODES</h1>
             </div>
             <div class="episodes-content">
                 {% for item in menu %}
                     <div class="season-content">
-                        <h3 class="season-title">
-                            <a href="#">SAISON {{ item[0].season }}</a>
-                        </h3>
+                        <div class="season-title">
+                            <h2><a href="#">SAISON {{ item[0].season }}</a></h2>
+                            <div class="rect"></div>
+                        </div>
+
 
                         {% for it in item %}
                                 <div class="episode-content">
@@ -35,7 +36,6 @@
                     </div>
                 {% endfor %}
             </div>
-        </section>
     </div>
 
     {% include 'footer.html.twig' %}

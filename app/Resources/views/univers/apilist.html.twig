@@ -14,14 +14,14 @@
         <div class="team miracle">
             <div class="team-header">
                 <h2>Génération Miracle</h2>
-                <div class="rect" style="background-color: #CFDCED"></div>
+                <div class="rect" style="background-color: #86C0EF"></div>
             </div>
             <div class="team-prez">
                 {% for api in apis %}
                     {% if api.team == "Génération Miracles" %}
                         <div class="character">
                             <img src="{{ api.img }}" alt="">
-                            <div class="character-name">{{ api.name }}</div>
+                            <div class="character-name" style="background-color: #86C0EF">{{ api.name }}</div>
                         </div>
                     {% endif %}
                 {% endfor %}
@@ -38,7 +38,7 @@
                     {% if api.team == "Lycée Seirin" %}
                         <div class="character">
                             <img src="{{ api.img }}" alt="">
-                            <div class="character-name">{{ api.name }}</div>
+                            <div class="character-name" style="background-color: #382C2F">{{ api.name }}</div>
                         </div>
                     {% endif %}
                 {% endfor %}
@@ -55,7 +55,7 @@
                     {% if api.team == "Lycée Kaijō" %}
                         <div class="character">
                             <img src="{{ api.img }}" alt="">
-                            <div class="character-name">{{ api.name }}</div>
+                            <div class="character-name" style="background-color: #2B54B0">{{ api.name }}</div>
                         </div>
                     {% endif %}
                 {% endfor %}
@@ -72,7 +72,7 @@
                     {% if api.team == "Lycée Shūtoku" %}
                         <div class="character">
                             <img src="{{ api.img }}" alt="">
-                            <div class="character-name">{{ api.name }}</div>
+                            <div class="character-name" style="background-color: #DB8B5A">{{ api.name }}</div>
                         </div>
                     {% endif %}
                 {% endfor %}
@@ -89,7 +89,7 @@
                     {% if api.team == "Académie Tōō" %}
                         <div class="character">
                             <img src="{{ api.img }}" alt="">
-                            <div class="character-name">{{ api.name }}</div>
+                            <div class="character-name" style="background-color: #98765C">{{ api.name }}</div>
                         </div>
                     {% endif %}
                 {% endfor %}
@@ -106,7 +106,7 @@
                     {% if api.team == "Lycée Kirisaki Daīchi" %}
                         <div class="character">
                             <img src="{{ api.img }}" alt="">
-                            <div class="character-name">{{ api.name }}</div>
+                            <div class="character-name" style="background-color: #2B767C">{{ api.name }}</div>
                         </div>
                     {% endif %}
                 {% endfor %}
@@ -116,3 +116,4 @@
     {% include 'footer.html.twig' %}
     </div>
 {% endblock %}
+

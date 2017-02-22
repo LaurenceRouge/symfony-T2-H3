@@ -361,14 +361,17 @@ section{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    margin: 30px 200px;
+    margin: 30px 198px;
 }
 
 .team-prez .character{
     padding: 8px 0;
+    margin-right: 1.5px;
 }
 .character .character-name{
-    padding-top: 3px;
+    padding: 10px;
+    color: white;
+    margin-top: -3px;
 }
 
 /* ÉPISODE */

@@ -5,11 +5,79 @@
     {% include 'header.html.twig' %}
     <div class="container">
         <h1>Personnages</h1>
-        <ul>
-            {% for api in apis %}
-                <li><a href="#">{{ api.name }}</a></li>
-            {% endfor %}
-        </ul>
+        <div class="team miracle">
+            <h2>Génération Miracle</h2>
+            <div class="team-prez">
+                {% for api in apis %}
+                    {% if api.team == "Génération Miracles" %}
+                        <img src="{{ api.img }}" alt="">
+                        <span class="character-name">{{ api.name }}</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="team seirin">
+            <h2>Lycée Seirin</h2>
+            <div class="team-prez"></div>
+                {% for api in apis %}
+                    {% if api.team == "Lycée Seirin" %}
+                        <img src="{{ api.img }}" alt="">
+                        <span class="character-name">{{ api.name }}</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="team kaijo">
+            <h2>Lycée Kaijō</h2>
+            <div class="team-prez">
+                {% for api in apis %}
+                    {% if api.team == "Lycée Kaijō" %}
+                        <img src="{{ api.img }}" alt="">
+                        <span class="character-name">{{ api.name }}</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="team shutiku">
+            <h2>Lycée Shūtoku</h2>
+            <div class="team-prez">
+                {% for api in apis %}
+                    {% if api.team == "Lycée Shūtoku" %}
+                        <img src="{{ api.img }}" alt="">
+                        <span class="character-name">{{ api.name }}</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="team too">
+            <h2>Académie Tōō</h2>
+            <div class="team-prez">
+                {% for api in apis %}
+                    {% if api.team == "Académie Tōō" %}
+                        <img src="{{ api.img }}" alt="">
+                        <span class="character-name">{{ api.name }}</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="team yosen">
+            <h2>Lycée Yōsen</h2>
+            <div class="team-prez">
+                {% for api in apis %}
+                    {% if api.team == "Lycée Yōsen" %}
+                        <img src="{{ api.img }}" alt="">
+                        <span class="character-name">{{ api.name }}</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+
 
     </div>
     {% include 'footer.html.twig' %}

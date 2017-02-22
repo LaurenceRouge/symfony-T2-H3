@@ -3,30 +3,31 @@
 
 {% block body %}
     {% include 'header.html.twig' %}
-    <div class="container">
-        <h1>scan</h1>
 
-        <table>
-            <tbody>
-            <tr>
-                <th>Title</th>
-                <td>{{ scan.title }}</td>
-            </tr>
-            <tr>
-                <th>Numéro de la saison</th>
-                <td>{{ scan.nbVolume }}</td>
-            </tr>
-            <tr>
-                <th>Numéro de l'épisode</th>
-                <td>{{ scan.nbChapter }}</td>
-            </tr>
-            <tr>
-                <th>Date de publication</th>
-                <td>{% if scan.publishedAt %}{{ scan.publishedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-            </tr>
-            </tbody>
-        </table>
-        <img src="../uploads/scans/{{ scan.fileScanName }}" controls></img>
+    <div class="container">
+        <section>
+            <div class="entity-title">
+                <h1>{{ scan.title }}</h1>
+            </div>
+            <div class="sc_box">
+                <div class="sc_box_content">
+                    <img src="../uploads/scans/{{ scan.fileScanName }}" controls></img>
+                </div>
+            </div>
+            <div class="new_content">
+                <div class="btn_left_right">
+                    <a href="/scan/{{ scan.id - 1 }}" class="btn">Précédent</a>
+                </div>
+                <div class="select_center">
+
+                </div>
+                <div class="btn_left_right">
+                    <a href="/scan/{{ scan.id + 1 }}" class="btn">Suivant</a>
+                </div>
+            </div>
+        </section>
+
     </div>
+
     {% include 'footer.html.twig' %}
 {% endblock %}

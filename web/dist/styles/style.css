@@ -2,6 +2,8 @@
 * FONT
 **/
 
+@import url(http://fonts.googleapis.com/css?family=Lekton:400,700);
+
 @font-face {
     font-family: "Gotham";
 }
@@ -146,7 +148,8 @@ section{
 .container{
     position: relative;
     width: 1200px;
-    height: auto;
+    min-height: 650px;
+    height: 100%;
     clear: both;
     margin: auto;
     padding: 20px 0 20px 0;
@@ -304,16 +307,92 @@ section{
 
 /* SCANS */
 
+.sc_box{
+    position:relative;
+    margin:auto;
+    margin-top:5px;
+    padding-top:0;
+    width:750px;
+    height:auto;
+    padding-bottom:10px;
+}
+
+.sc_box_content{
+    margin: auto;
+    text-align:center;
+    padding:0px;
+    min-height:370px;
+    height:auto;
+    position:relative;
+    top:6px;
+}
+
+.sc_box_content img{
+
+}
+
 /***
 * FOOTER
 **/
 
 footer{
-    width:1200px;
-    margin:auto;
-    background-color:#3d3d3d;
     position: relative;
-    height: 300px;
-    clear:both;
-
+    width: 1200px;
+    height: 140px;
+    clear: both;
+    padding: 20px 0 20px 0;
+    background: #222;
+    border-top: 3px solid #fefefe;
+    border-left: 1px solid #d2d7e1;
+    border-right: 1px solid #d2d7e1;
+    z-index: 20;
+    color: #fefefe;
 }
+
+footer li {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.github-links {
+    display: flex;
+    justify-content: center;
+}
+
+.github-link {
+    font-size: 1em;
+    border: 1px solid white;
+    float: left;
+}
+
+footer .github-link a {
+    text-align: center;
+    padding: .5em;
+    color: white;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+footer .github-link a:hover {
+    background-color: #e9e9e9;
+    text-decoration: none;
+    color: #222;
+}
+footer a:hover {
+    color: #fefefe;
+}
+
+.footer-links {
+    z-index: 3;
+    position: absolute;
+    margin: 20px;
+    width: 100%;
+
+    footer ul {
+        width: 700px;
+        text-align: center;
+    }
+}
+

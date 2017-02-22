@@ -49,15 +49,23 @@ nav {
     background: #da1c1c;
     border-top: 3px solid #fefefe;
     border-bottom: 3px solid #fefefe;
+    background-image: -webkit-linear-gradient(top, #da1c1c, #B00C0C);
+    background-image: -moz-linear-gradient(top, #da1c1c, #B00C0C);
+    background-image: -o-linear-gradient(top, #da1c1c, #B00C0C);
+    background-image: linear-gradient(to bottom, #da1c1c, #B00C0C);
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
 }
 nav a {
     font-size:15px;
+    font-weight: 900;
     display: block;
     padding: 0 20px;
-    line-height: 46px;
+    line-height: 44px;
     color: #fefefe;
     text-decoration: none;
     cursor: pointer;
+    text-shadow: 0 1px #2e3131;
 
     -webkit-transition: 0.3s ease-out;
     -moz-transition: 0.3s ease-out;
@@ -103,6 +111,41 @@ nav li.active a {
     background: #da1c1c;
     background: rgba(254, 254, 254, 0.1);
     border-bottom: 4px solid #fefefe;
+}
+
+.menu_accueil{
+    background-image: -webkit-linear-gradient(top, #da1c1c, #B00C0C);
+    background-image: -moz-linear-gradient(top, #da1c1c, #B00C0C);
+    background-image: -o-linear-gradient(top, #da1c1c, #B00C0C);
+    background-image: linear-gradient(to bottom, #da1c1c, #B00C0C);
+}
+
+.menu_univers{
+    background-image: -webkit-linear-gradient(top, #f24900, #D03F00);
+    background-image: -moz-linear-gradient(top, #f24900, #D03F00);
+    background-image: -o-linear-gradient(top, #f24900, #D03F00);
+    background-image: linear-gradient(to bottom, #f24900, #D03F00);
+}
+
+.menu_episode{
+    background-image: -webkit-linear-gradient(top, #ffcf00, #E5A300);
+    background-image: -moz-linear-gradient(top, #ffcf00, #E5A300);
+    background-image: -o-linear-gradient(top, #ffcf00, #E5A300);
+    background-image: linear-gradient(to bottom, #ffcf00, #E5A300);
+}
+
+.menu_scan{
+    background-image: -webkit-linear-gradient(top, #9dd03d, #638621);
+    background-image: -moz-linear-gradient(top, #9dd03d, #638621);
+    background-image: -o-linear-gradient(top, #9dd03d, #638621);
+    background-image: linear-gradient(to bottom, #9dd03d, #638621);
+}
+
+.menu_news{
+    background-image: -webkit-linear-gradient(top, #00a3ea, #01628C);
+    background-image: -moz-linear-gradient(top, #00a3ea, #01628C);
+    background-image: -o-linear-gradient(top, #00a3ea, #01628C);
+    background-image: linear-gradient(to bottom, #00a3ea, #01628C);
 }
 
 /***

@@ -325,24 +325,51 @@ section{
 /* UNIVERS */
 .team{
     padding: 15px;
-    margin: 20px;
+    margin: 35px 40px;
     background-color: #fff;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.team-header{
+    display:flex;
+    align-items: center;
 }
 
 .team h1{
     color: #ddd;
     font-size: 100px;
     font-weight: bold;
+    padding: 0 40px;
 }
+
+.team h2{
+    text-transform: uppercase;
+    padding: 20px 6px;
+    width: 30%;
+    display: inline;
+}
+.team .rect{
+    height:3px;
+    width:100%;
+    background:black
+}
+
+.team .synopsis{
+    padding: 30px 50px;
+}
+
 .team-prez{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    margin: 30px 100px;
+    margin: 30px 200px;
 }
 
 .team-prez .character{
-
+    padding: 8px 0;
+}
+.character .character-name{
+    padding-top: 3px;
 }
 
 /* ÉPISODE */

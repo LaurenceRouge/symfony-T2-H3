@@ -4,7 +4,7 @@
 {% block body %}
     {% include 'header.html.twig' %}
     <div class="container">
-        <div class="team">
+        <div class="team title">
             <h1>UNIVERS</h1>
             <div class="synopsis">
                 C'est la rentrée au club de basket-ball du lycée Seirin et cette année, deux rookies se démarquent… D'un côté, le volcanique Taiga Kagami, fraîchement revenu des États-Unis où il a fait ses armes sous les arceaux. De l'autre, le chétif et très effacé Tetsuya Kuroko dont on murmure qu'il aurait fait partie de l'équipe de basket du collège Teikô, la légendaire “Génération Miracle” ! Et si ces deux joueurs que tout oppose étaient amenés à se compléter à merveille sur le terrain ?
@@ -12,7 +12,10 @@
             </div>
         </div>
         <div class="team miracle">
-            <h2>Génération Miracle</h2>
+            <div class="team-header">
+                <h2>Génération Miracle</h2>
+                <div class="rect"></div>
+            </div>
             <div class="team-prez">
                 {% for api in apis %}
                     {% if api.team == "Génération Miracles" %}
@@ -26,7 +29,10 @@
         </div>
 
         <div class="team seirin">
+            <div class="team-header">
             <h2>Lycée Seirin</h2>
+            <div class="rect"></div>
+            </div>
             <div class="team-prez">
                 {% for api in apis %}
                     {% if api.team == "Lycée Seirin" %}
@@ -40,7 +46,10 @@
         </div>
 
         <div class="team kaijo">
+            <div class="team-header">
             <h2>Lycée Kaijō</h2>
+            <div class="rect"></div>
+            </div>
             <div class="team-prez">
                 {% for api in apis %}
                     {% if api.team == "Lycée Kaijō" %}
@@ -54,7 +63,10 @@
         </div>
 
         <div class="team shutoku">
+            <div class="team-header">
             <h2>Lycée Shūtoku</h2>
+            <div class="rect"></div>
+            </div>
             <div class="team-prez">
                 {% for api in apis %}
                     {% if api.team == "Lycée Shūtoku" %}
@@ -68,7 +80,10 @@
         </div>
 
         <div class="team too">
+            <div class="team-header">
             <h2>Académie Tōō</h2>
+            <div class="rect"></div>
+            </div>
             <div class="team-prez">
                 {% for api in apis %}
                     {% if api.team == "Académie Tōō" %}
@@ -82,7 +97,10 @@
         </div>
 
         <div class="team yosen">
+            <div class="team-header">
             <h2>Lycée Yōsen</h2>
+            <div class="rect"></div>
+            </div>
             <div class="team-prez">
                 {% for api in apis %}
                     {% if api.team == "Lycée Yōsen" %}

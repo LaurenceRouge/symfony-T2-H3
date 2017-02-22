@@ -43,7 +43,7 @@
 
             <div class="episodes-content">
 
-                {% for episode in episodes|reverse|slice(0, 6)%}
+                {% for episode in episodes|reverse|slice(0, 12)%}
                     <div class="episode-content">
                         <a href="/episode/{{ episode.id }}"><img src="/uploads/episodes/{{ episode.thumbnail }}" alt="" class="picture-episode-content"></a>
                         <div class="title-episode-content">
@@ -65,7 +65,7 @@
 
             <div class="scans-content">
 
-                {% for scan in scans|reverse|slice(0, 6)%}
+                {% for scan in scans|reverse|slice(0, 12)%}
                     <div class="scan-content">
                         <a href="/scan/{{ scan.id }}"><img src="/uploads/scans/{{ scan.thumbnail }}" alt="" class="picture-scan-content"></a>
                         <div class="title-scan-content">

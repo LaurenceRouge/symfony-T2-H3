@@ -37,9 +37,11 @@ class FrontEpisodeListController extends Controller
             $num_season = $episode->getNbSeason();
             $num_episode = $episode->getNbEpisode();
             $id = $episode->getId();
+            $title = $episode->getTitle();
+            $thumbnail = $episode->getThumbnail();
             if(!isset($menu[$num_season]))
                 $menu[$num_season] = array();
-            array_push($menu[$num_season], array('season' => $num_season, 'episode' => $num_episode, 'id' => $id));
+            array_push($menu[$num_season], array('season' => $num_season, 'episode' => $num_episode, 'id' => $id, 'title' => $title, 'thumbnail' => $thumbnail));
         }
 
 

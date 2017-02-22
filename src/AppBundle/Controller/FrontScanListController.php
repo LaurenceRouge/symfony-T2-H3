@@ -37,9 +37,10 @@ class FrontScanListController extends Controller
             $num_volume = $scan->getNbVolume();
             $num_chapter = $scan->getNbChapter();
             $id = $scan->getId();
+            $thumbnail = $scan->getThumbnail();
             if(!isset($menu[$num_volume]))
                 $menu[$num_volume] = array();
-            array_push($menu[$num_volume], array('volume' => $num_volume, 'chapter' => $num_chapter, 'id' => $id));
+            array_push($menu[$num_volume], array('volume' => $num_volume, 'chapter' => $num_chapter, 'id' => $id, 'thumbnail' => $thumbnail));
         }
 
 

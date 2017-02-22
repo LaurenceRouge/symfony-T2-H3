@@ -9,25 +9,29 @@
     <!--  CONTENTS  -->
     <div class="container">
 
-        <div class="content episodes">
-            <div class="content__title">
-                <h2>SCANS</h2>
+        <section>
+            <div class="entity-title">
+                <h1>TOUS LES SCANS</h1>
             </div>
-            <ul>
+            <div class="sc_box">
+
                 {% for item in menu %}
-                    <li><a href="#">VOLUME {{ item[0].volume }}</a></li>
-                        <ul>
-                            {% for it in item %}
-                                <li><a href="{{ it.id }}">CHAPITRE {{ it.chapter }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-
+                    {% for it in item %}
+                        <div class="scan-content">
+                            <a href="/scan/{{ it.id }}">
+                                <img src="/uploads/scans/{{ it.thumbnail }}" alt="" class="picture-scan-content">
+                            </a>
+                            <div class="title-scan-content">
+                                <div>
+                                    <a href="/scan/{{ it.id }}">Tome n°{{ it.chapter }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
                 {% endfor %}
-            </ul>
-        </div>
 
-    </div>
+            </div>
+        </section>
 
     {% include 'footer.html.twig' %}
 

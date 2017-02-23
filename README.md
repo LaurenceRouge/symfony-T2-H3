@@ -52,7 +52,11 @@ __2. Create and update database__
 ```sh
   $ php bin/console fos:user:create username --super-admin
  ```
-
+ Enter Back Office with route : /login
+ 
+ News : /admin/news
+ Scans : /admin/scans
+ Episodes : /admin/episode
 
 
 

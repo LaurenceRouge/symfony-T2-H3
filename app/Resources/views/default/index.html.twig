@@ -33,22 +33,18 @@
 
             <div class="home-news-content">
 
-                <img src="/dist/images/Actu.jpg" alt="">
+                <img class="news-img" src="/dist/images/Actu.jpg" alt="">
+                <div class="news-box">
+                    {% for new in news|reverse|slice(0, 5)%}
 
-                {% for new in news|reverse|slice(0, 5)%}
-
-                    <div class="home-news-content">
-
-                        <div class="picture-news-content">
-
-                        </div>
+                    <a href="/news">
                         <div class="title-content">
-                            <div><a href="/news">{{ new.title }}</a></div>
+                            <div>{{ new.title }}</div>
                         </div>
+                    </a>
 
-                    </div>
-
-                {% endfor %}
+                    {% endfor %}
+                </div>
 
             </div>
 

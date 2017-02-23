@@ -31,7 +31,7 @@ html, body{
 }
 
 /***
-* HEADER
+* ---------- HEADER  ----------
 **/
 
 #header {
@@ -199,7 +199,7 @@ h4{
     z-index: 2;
 }
 
-/* HOME */
+/*  ---------- HOME ----------  */
 
 .home-section{
     background-color: #fff;
@@ -226,9 +226,33 @@ h4{
 .synopsis{
     padding: 30px 50px;
 }
-
 .home-news-content{
+    display:flex;
+    align-items: center;
+}
 
+.news-img{
+    width: 60%;
+    margin-top: -12px;
+}
+.home-news-content .news-box{
+
+}
+
+.home-news-content .title-content{
+    width: 100%;
+    margin-top: -5px;
+    border: 2px solid black;
+    line-height: 34px;
+    display: block;
+    padding: 20px;
+    background-color: #252525;
+    color: white;
+    text-decoration: none;
+}
+
+.home-news-content .title-content:hover{
+    background-color: #B00C0C;
 }
 
 .home-content{
@@ -247,7 +271,7 @@ h4{
 }
 
 
-/* NEWS */
+/*  ---------- NEWS ----------  */
 
 .new_content{
     display: table;
@@ -263,7 +287,7 @@ h4{
 }
 
 
-/* PERSONNAGES */
+/*  ---------- PERSONNAGES ----------  */
 
 .section-box-content{
     padding: 15px;
@@ -303,7 +327,7 @@ h4{
 }
 
 
-/* ÉPISODE */
+/* ---------- ÉPISODE ----------  */
 
 .episodes, .scans{
     padding: 15px;
@@ -377,7 +401,7 @@ h4{
 }
 
 
-/* SCANS */
+/* ---------- SCANS ----------  */
 
 .scan-content{
     position: relative;
@@ -465,7 +489,7 @@ h4{
 }
 
 /***
-* FOOTER
+* ---------- FOOTER ----------
 **/
 
 footer{

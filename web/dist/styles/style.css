@@ -185,7 +185,6 @@ h4{
     margin: 5px 0 5px 0;
 }
 
-
 .container{
     position: relative;
     width: 1200px;
@@ -197,6 +196,8 @@ h4{
     border-right: 1px solid #d2d7e1;
     z-index: 2;
 }
+
+/* HOME */
 
 .home-section{
     background-color: #fff;
@@ -210,7 +211,7 @@ h4{
     width: 42px;
 }
 
-.entity-title{
+.home-entity-title{
     margin: 15px 0 20px 0;
     font-size: 2em;
     line-height: 1em;
@@ -220,7 +221,11 @@ h4{
     text-transform: inherit;
 }
 
-.episodes-content{
+.home-news-content{
+
+}
+
+.home-content{
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -228,45 +233,15 @@ h4{
     width: 100%;
 }
 
-.episode-content{
-    position: relative;
-    display: inline-block;
-    margin: 18px;
-}
-
-.picture-episode-content{
-    position: relative;
-    width: 170px;
-}
-
-.picture-scan-content{
-    position: relative;
-    width: 130px;
-}
-
-.title-episode-content{
-}
-
-.scans-content{
-    display: block;
-    background-color: #fff;
-    padding: 30px;
-    margin: 20px;
-    box-shadow: 1px 1px 1px #888888;
-}
-
-.scan-content{
-    position: relative;
-    display: inline-block;
-    margin: 20px;
-}
-
-.title-episode-content, .title-scan-content{
+.title-content{
     position: relative;
     text-align: left;
     margin: 5px 0 5px 0;
     width:100px;
 }
+
+
+/* NEWS */
 
 .new_content{
     display: table;
@@ -276,50 +251,14 @@ h4{
     height:30px;
     margin-top:20px;
 }
+
 .new_content > div{
     display: table-cell;
 }
 
-.btn_left_right{
-    height:30px;
-    width:20%;
-}
-
-.select_center{
-    height:30px;
-    width:50%;
-}
-
-
-.btn{
-    display:inline-block;
-    position:relative;
-    top:-12px;
-    background-color: #da1c1c;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    color: #fefefe;
-    font-size: 16px;
-    padding: 7px 0px;
-    text-decoration: none;
-    width:150px;
-
-    -webkit-transition: 0.1s ease-out;
-    -moz-transition: 0.1s ease-out;
-    -o-transition: 0.1s ease-out;
-    transition: 0.1s ease-out;
-}
-
-.btn:hover {
-    background: #da1c1c;
-    background: rgba(254, 254, 254, 0.1);
-    text-decoration: none;
-}
-
-/* NEWS */
 
 /* UNIVERS */
+
 .team{
     padding: 15px;
     margin: 35px 40px;
@@ -367,7 +306,19 @@ h4{
     margin-top: -3px;
 }
 
+
 /* ÉPISODE */
+
+.episode-content{
+    position: relative;
+    display: inline-block;
+    margin: 18px;
+}
+
+.picture-episode-content{
+    position: relative;
+    width: 170px;
+}
 
 .season-title .rect, .team .rect{
     height:3px;
@@ -391,7 +342,6 @@ h4{
 }
 
 .season-title h1{
-
     text-transform: uppercase;
     padding: 20px 6px;
     width: 17%;
@@ -432,7 +382,19 @@ h4{
     height: 410px;
 }
 
+
 /* SCANS */
+
+.scan-content{
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.picture-scan-content{
+    position: relative;
+    width: 130px;
+}
 
 .scans h1{
     color: #ddd;
@@ -463,6 +425,45 @@ h4{
 
 .sc_box_content img{
 
+}
+
+/* episode & scan page button */
+
+.btn_left_right{
+    height:30px;
+    width:20%;
+}
+
+.select_center{
+    height:30px;
+    width:50%;
+}
+
+
+.btn{
+    display:inline-block;
+    position:relative;
+    top:-12px;
+    background-color: #da1c1c;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #fefefe;
+    font-size: 16px;
+    padding: 7px 0px;
+    text-decoration: none;
+    width:150px;
+
+    -webkit-transition: 0.1s ease-out;
+    -moz-transition: 0.1s ease-out;
+    -o-transition: 0.1s ease-out;
+    transition: 0.1s ease-out;
+}
+
+.btn:hover {
+    background: #da1c1c;
+    background: rgba(254, 254, 254, 0.1);
+    text-decoration: none;
 }
 
 /***

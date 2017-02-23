@@ -14,7 +14,7 @@
 **/
 
 html, body{
-    background-repeat:repeat-x;
+    background-image: url("/dist/images/background.png");
     background-color:#f2f4f7;
     font-family:Gotham, arial, sans-serif; font-size:16px;
     color:#36322b;
@@ -508,7 +508,7 @@ a:hover{
 footer{
     position: relative;
     width: 1200px;
-    height: 140px;
+    height: 180px;
     clear: both;
     padding: 20px 0 20px 0;
     background: #222;

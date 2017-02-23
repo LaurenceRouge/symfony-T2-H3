@@ -35,7 +35,7 @@ class FrontAPIListController extends Controller
 
         $context = stream_context_create($opts);
 
-        // Accès à un fichier HTTP avec les entêtes HTTP indiqués ci-dessus
+        // Access to HTTP file
         $temp = file_get_contents('http://127.0.0.1:8000/api/characters', false, $context);
         $api = json_decode($temp);
 

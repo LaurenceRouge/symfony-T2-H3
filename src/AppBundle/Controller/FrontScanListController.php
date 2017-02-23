@@ -26,6 +26,7 @@ class FrontScanListController extends Controller
 
     public function scanAction()
     {
+        //Get all scans
         $em = $this->getDoctrine()->getManager();
 
         $scans = $em->getRepository('AppBundle:Scan')->findAll();
@@ -34,10 +35,13 @@ class FrontScanListController extends Controller
         $menu = array();
         foreach ($scans as $scan)
         {
+            //Get fields
             $num_volume = $scan->getNbVolume();
             $num_chapter = $scan->getNbChapter();
             $id = $scan->getId();
             $thumbnail = $scan->getThumbnail();
+
+            //Make an menu array with all scans inside
             if(!isset($menu[$num_volume]))
                 $menu[$num_volume] = array();
             array_push($menu[$num_volume], array('volume' => $num_volume, 'chapter' => $num_chapter, 'id' => $id, 'thumbnail' => $thumbnail));

@@ -26,6 +26,7 @@ class FrontEpisodeListController extends Controller
 
     public function episodeAction()
     {
+        //Get all episodes
         $em = $this->getDoctrine()->getManager();
 
         $episodes = $em->getRepository('AppBundle:Episode')->findAll();
@@ -34,11 +35,14 @@ class FrontEpisodeListController extends Controller
         $menu = array();
         foreach ($episodes as $episode)
         {
+            //Get fields
             $num_season = $episode->getNbSeason();
             $num_episode = $episode->getNbEpisode();
             $id = $episode->getId();
             $title = $episode->getTitle();
             $thumbnail = $episode->getThumbnail();
+
+            //Make an menu array with all episodes inside
             if(!isset($menu[$num_season]))
                 $menu[$num_season] = array();
             array_push($menu[$num_season], array('season' => $num_season, 'episode' => $num_episode, 'id' => $id, 'title' => $title, 'thumbnail' => $thumbnail));

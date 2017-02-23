@@ -26,7 +26,7 @@ class DefaultController extends Controller
             ->getRepository('AppBundle:Episode');
         $episodes = $repository->findAll();
 
-        // On récupère le repository et les episodes
+        // On récupère le repository et les scans
         $repository = $this->getDoctrine()
             ->getManager()
             ->getRepository('AppBundle:Scan');

@@ -26,6 +26,7 @@ class FrontNewsListController extends Controller
 
     public function newsAction()
     {
+        //Get all News
         $em = $this->getDoctrine()->getManager();
 
         $news = $em->getRepository('AppBundle:News')->findAll();

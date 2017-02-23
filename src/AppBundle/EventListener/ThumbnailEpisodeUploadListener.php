@@ -6,7 +6,6 @@
  * Time: 15:15
  */
 
-// src/AppBundle/EventListener/FileVideoUploadListener.php
 namespace AppBundle\EventListener;
 
 use ClassesWithParents\E;

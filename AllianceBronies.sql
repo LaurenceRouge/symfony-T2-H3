@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  localhost:8889
--- Généré le :  Mar 21 Février 2017 à 19:05
+-- Généré le :  Jeu 23 Février 2017 à 23:46
 -- Version du serveur :  5.6.34
 -- Version de PHP :  7.1.0
 
@@ -19,22 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `AllianceBronies`
 --
-
--- --------------------------------------------------------
-
---
--- Structure de la table `episode`
---
-
-CREATE TABLE `episode` (
-  `id` int(11) NOT NULL,
-  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `nb_episode` int(11) NOT NULL,
-  `nb_season` int(11) NOT NULL,
-  `file_video` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `published_at` datetime NOT NULL,
-  `thumbnail` varchar(255) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Contenu de la table `episode`
@@ -60,9 +44,9 @@ INSERT INTO `episode` (`id`, `title`, `nb_episode`, `nb_season`, `file_video`, `
 (17, 'Épisode 17 - Un ramassis de tarés', 17, 1, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 17 - Un ramassis de tarés.jpg'),
 (18, 'Épisode 18 - Abandonner, ça jamais !', 18, 1, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 18 - Abandonner, ça jamais !.jpg'),
 (19, 'Épisode 19 - Vers de nouveaux défis', 19, 1, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 19 - Vers de nouveaux défis.jpg'),
-(20, 'Épisode 20 - On dit pas « je veux » !.jpg', 20, 1, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 20 - On dit pas « je veux » !.jpg'),
+(20, 'Épisode 20 - On dit pas « je veux » !', 20, 1, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 20 - On dit pas « je veux » !.jpg'),
 (21, 'Épisode 21 - C’est parti !', 21, 1, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 21 - C’est parti !.jpg'),
-(22, 'Épisode 22 - Même si ça doit me prendre toute une vie.jpg', 22, 1, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 22 - Même si ça doit me prendre toute une vie'),
+(22, 'Épisode 22 - Même si ça doit me prendre toute une vie', 22, 1, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 22 - Même si ça doit me prendre toute une vie.jpg'),
 (23, 'Épisode 23 - Immature !', 23, 1, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 23 - Immature !.jpg'),
 (24, 'Épisode 24 - Arrêtez de vous faire des films !', 24, 1, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 24 - Arrêtez de vous faire des films !.jpg'),
 (25, 'Épisode 25 - Mon basket et le tien', 25, 1, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 25 - Mon basket et le tien.jpg'),
@@ -77,7 +61,7 @@ INSERT INTO `episode` (`id`, `title`, `nb_episode`, `nb_season`, `file_video`, `
 (34, 'Épisode 34 - Je vais te battre !', 34, 2, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 34 - Je vais te battre !.jpg'),
 (35, 'Épisode 35 - Confiance !', 35, 2, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 35 - Confiance !.jpg'),
 (36, 'Épisode 36 - Ras-le-bol !', 36, 2, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 36 - Ras-le-bol !.jpg'),
-(37, 'Épisode 37 - On compte sur votre indulgence', 37, 2, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 37 - On compte sur votre indulgence'),
+(37, 'Épisode 37 - On compte sur votre indulgence', 37, 2, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 37 - On compte sur votre indulgence.jpg'),
 (38, 'Épisode 38 - Je te le jure', 38, 2, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 38 - Je te le jure.jpg'),
 (39, 'Épisode 39 - Vains efforts', 39, 2, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 39 - Vains efforts.jpg'),
 (40, 'Épisode 40 - Grisé', 40, 2, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 40 - Grisé.jpg'),
@@ -117,27 +101,6 @@ INSERT INTO `episode` (`id`, `title`, `nb_episode`, `nb_season`, `file_video`, `
 (74, 'Épisode 74 - C\'était donc toi ?', 74, 3, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 74 - C\'était donc toi .jpg'),
 (75, 'Épisode 75 - Autant de fois que tu voudras !', 75, 3, 'S3_E01.mp4', '2017-02-20 00:00:00', 'Épisode 75 - Autant de fois que tu voudras !.jpg');
 
--- --------------------------------------------------------
-
---
--- Structure de la table `fos_user`
---
-
-CREATE TABLE `fos_user` (
-  `id` int(11) NOT NULL,
-  `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `email` varchar(180) COLLATE utf8_unicode_ci NOT NULL,
-  `username` varchar(180) COLLATE utf8_unicode_ci NOT NULL,
-  `username_canonical` varchar(180) COLLATE utf8_unicode_ci NOT NULL,
-  `email_canonical` varchar(180) COLLATE utf8_unicode_ci NOT NULL,
-  `enabled` tinyint(1) NOT NULL,
-  `salt` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `last_login` datetime DEFAULT NULL,
-  `confirmation_token` varchar(180) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `password_requested_at` datetime DEFAULT NULL,
-  `roles` longtext COLLATE utf8_unicode_ci NOT NULL COMMENT '(DC2Type:array)'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
 --
 -- Contenu de la table `fos_user`
 --
@@ -147,47 +110,18 @@ INSERT INTO `fos_user` (`id`, `password`, `email`, `username`, `username_canonic
 (4, '$2y$13$Vnl/7Lu3PrCSHUGA4diMsu5rtbIQqirtS7ayaOkWTtVCpJPSDoSL6', 'username', 'username', 'username', 'username', 1, NULL, '2017-02-20 16:24:15', NULL, NULL, 'a:1:{i:0;s:16:\"ROLE_SUPER_ADMIN\";}'),
 (5, '$2y$13$VVQ.euUwZ5hiXanlZlgB0u9aJrUyRqkhtg/MX46DbLtQhdtDt/5cq', 'plouf@plouf.com', 'plouf', 'plouf', 'plouf@plouf.com', 1, NULL, '2017-02-18 14:02:08', NULL, NULL, 'a:0:{}');
 
--- --------------------------------------------------------
-
---
--- Structure de la table `news`
---
-
-CREATE TABLE `news` (
-  `id` int(11) NOT NULL,
-  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `content` longtext COLLATE utf8_unicode_ci NOT NULL,
-  `published_at` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
 --
 -- Contenu de la table `news`
 --
 
 INSERT INTO `news` (`id`, `title`, `content`, `published_at`) VALUES
-(4, 'ACTU 1', '111kjuyhtrgthjyukyjhydufk,\\r\\ny;iy,nd,ufy;i\\r\\ny,n\\r\\n,u;ilu;y,n\\r\\n,io:m;\\r\\ny,nt,y;:u\\r\\ny,tn,;oymu\\r\\ni;,tnu;o:iy', '2017-02-18 17:34:06'),
-(5, 'ACTU 2', '222kjuyhtrgthjyukyjhydufk,\\r\\ny;iy,nd,ufy;i\\r\\ny,n\\r\\n,u;ilu;y,n\\r\\n,io:m;\\r\\ny,nt,y;:u\\r\\ny,tn,;oymu\\r\\ni;,tnu;o:iy', '2017-02-18 17:34:06'),
-(6, 'ACTU 3', '333kjuyhtrgthjyukyjhydufk,\\r\\ny;iy,nd,ufy;i\\r\\ny,n\\r\\n,u;ilu;y,n\\r\\n,io:m;\\r\\ny,nt,y;:u\\r\\ny,tn,;oymu\\r\\ni;,tnu;o:iy', '2017-02-18 17:34:24'),
-(7, 'ACTU 4', '444kjuyhtrgthjyukyjhydufk,\\r\\ny;iy,nd,ufy;i\\r\\ny,n\\r\\n,u;ilu;y,n\\r\\n,io:m;\\r\\ny,nt,y;:u\\r\\ny,tn,;oymu\\r\\ni;,tnu;o:iy', '2017-02-18 17:34:24'),
-(8, 'ACTU 5', '555kjuyhtrgthjyukyjhydufk,\\r\\ny;iy,nd,ufy;i\\r\\ny,n\\r\\n,u;ilu;y,n\\r\\n,io:m;\\r\\ny,nt,y;:u\\r\\ny,tn,;oymu\\r\\ni;,tnu;o:iy', '2017-02-18 17:34:40'),
-(9, 'ACTU 6', '666kjuyhtrgthjyukyjhydufk,\\r\\ny;iy,nd,ufy;i\\r\\ny,n\\r\\n,u;ilu;y,n\\r\\n,io:m;\\r\\ny,nt,y;:u\\r\\ny,tn,;oymu\\r\\ni;,tnu;o:iy', '2017-02-18 17:35:21'),
-(10, 'ACTU 7', '777kjuyhtrgthjyukyjhydufk,\\r\\ny;iy,nd,ufy;i\\r\\ny,n\\r\\n,u;ilu;y,n\\r\\n,io:m;\\r\\ny,nt,y;:u\\r\\ny,tn,;oymu\\r\\ni;,tnu;o:iy', '2017-02-18 17:35:21');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `scan`
---
-
-CREATE TABLE `scan` (
-  `id` int(11) NOT NULL,
-  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `nb_chapter` int(11) NOT NULL,
-  `nb_volume` int(11) NOT NULL,
-  `file_scan_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `published_at` datetime NOT NULL,
-  `thumbnail` varchar(255) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+(1, 'Kuroko’s Basket Replace PLUS en mars 2017', 'Kuroko\'s Basket Replace PLUS  Vol.1 / 5+ de Ichiro Takahashi (dessin), d\'après l\'œuvre de Tadatoshi Fujimaki et Sawako Hirabayashi sortira le 15 mars 2017 au prix de 6,79€ aux éditions Kazé.\\nLe volume 2, 3 et 4 sont respectivement programmés pour le 21 juin, le 20 septembre et le 13 décembre 2017.\\n', '2017-02-18 17:34:06'),
+(2, 'Le film animation Kuroko no Basket Last Game, en Trailer\\n', 'C’est sur le site officiel que nous découvrons le trailer du film animation, Kuroko no Basket Last Game !\\nLe film est prévu le 18 Mars 2017 dans les salles japonaises & au Printemps 2017 en France (animedigitalnetwork.fr / Kazé).\\nIl s’agit de l’adaptation du manga Kuroko no Basket Extra Game.\\nGenre : Shonen, Sport, Tranche de vie\\nSynopsis KnB Extra Game :\\nL’histoire se déroule après la fin du manga Kuroko no Basket (après la Winter Cup).\\nUne équipe de street basketball américaine, l’équipe Jabberwock, est invitée au Japon pour un match amical contre l’équipe japonaise, Strky.\\nCependant, durant le match Jabberwock prend un malin plaisir à humilier publiquement l’équipe adverse par leur jeu.\\nAprès l’écrasante défaite de l’équipe Strky, le capitaine de Jabberwock tient des propos irrespectueux envers les japonais.\\nAprès avoir entendu ça, Kagetora demande à l’équipe américaine une revanche contre une autre équipe japonaise.\\nDans une semaine Jabberwock devra faire face à l’incroyable Vorpal Swords, composée de la Génération des Miracles, Kuroko et Kagami, avec comme coach Kagetora, Riko et Momoi.\\nTrailer :\\n\\nhttps://youtu.be/r8ioK6FzKXg\\n', '2017-02-19 20:34:06'),
+(3, 'Kuroko sur 3DS', 'Kuroko no Basket Mirai e no Kizuna est la troisième adaptation en jeu vidéo du manga de Tadatoshi Fujimaki.\\nCe troisième opus exclusif à la 3DS propose une histoire originale avec certaines scènes doublées par les seyu de la série. Il propose également des quêtes secondaires, permettant d’alterner entre un gameplay de type \"aventure\" et les parties de \"basket\".', '2017-02-20 17:07:24'),
+(4, 'Japan Expo du 6 au 9 Juillet 2017', 'Le 18ème Impact du festival Japan Expo dévoile sa thématique : l’édition 2017 de l’événement sera consacré à la célébration des 100 ans de l’animation japonaise !\\n\\n« En 1917 était réalisé le plus ancien film d’animation connu à ce jour : Nakamura Gatana, réalisé par Jun’ichi KÔUCHI. 100 ans plus tard, l’animation japonaise a conquis le monde entier. »\\n\\nAu cours de l’événement de juillet 2017, une exposition mettra en avant 100 animés sélectionnés parmi la production des 100 dernières années, parmi lesquels 80 issus des années 1917 à 1999 ont d’ores et déjà été sélectionnés par l’équipe de Japan Expo et « un comité d’experts ». Pour les 20 autres titres, l’organisation du festival compte sur les votes du public qui sera sondé dans les prochains jours.', '2017-02-21 07:34:24'),
+(5, 'Une collaboration entre la NBA et le film Kuroko’s Basket LAST GAME\\n', 'La NBA (National Basketball Association) et le long métrage animé Kuroko’s Basket LAST GAME (Gekijôban Kuroko no Basket LAST GAME) ont annoncé un partenariat portant essentiellement sur la production de produits dérivés.\\n\\nEn l’occurrence, choix a été fait d’attribuer à 8 des 30 franchises de la ligue nord-américaine de Basketball un personnage de Kuroko’s Basket qui revêt le jersey de l’équipe concernée sur une illustration. Cette sélection a été faite par Tadatoshi FUJIMAKI, auteur du manga et superviseur du film, lui-même, et les illustrations réalisées par Yoko KIKUCHI, character designer du long-métrage.\\nLes produits dérivés issus de ce partenariat devraient être vendus au magasin Seibu Ikebukuro Flagship de Tokyo et dans des magasins sélectionnés au Japon.\\nLes personnages dévoilés jusqu’ici :\\nTetsuya KUROKO qui porte le maillot des San Antonio Spurs ;\\nTaiga KAGAMI qui porte le maillot des Chicago Bulls ;\\nShintaro MIDORIMA qui porte le maillot des Boston Celtics ;\\nSeijuro AKASHI qui porte le maillot des Los Angeles Lakers ;\\nRyôta KISE qui porte le maillot des Golden State Warriors ;\\nAtsushi MURASAKIBARA qui porte le maillot des Phoenix Suns ;\\nDaiki AOMINE qui porte le maillot des Cleveland Cavaliers ;\\nTatsuya HIMURO qui porte le maillot des New York Knicks.\\nLe film Kuroko’s Basket LAST GAME (Gekijôban Kuroko no Basket LAST GAME) est l’adaptation animée du manga Kuroko’s Basket – Extra Game de Tadatoshi FUJIMAKI produite par Production I.G et réalisée par Shunsuke TADA (Kuroko’s Basket).\\nEn France, le manga et la série animée sont édités chez Kazé.\\n', '2017-02-22 10:34:40'),
+(6, 'Kuroko no Basket et la Winter Cup de retour !\\n', 'Kuroko no Basket revient ce 22 février avec un film d\'animation sur la Winter Cup. Composé en trois volets, ce film ne sera que la première partie.\\nKuroko no Basket est un shônen publiée chez Kazé et connaît 30 tomes. Une suite du manga intitulé Kuroko no Basket Extra Game est sorti et compte deux volumes pour l\'instant. Un animé a également été adapté en 3 saisons et est diffusé en streaming sur ADN ou sur la chaîne Game One. \\nC\'est la rentrée au club de basket-ball du lycée Seirin et cette année, deux rookies se démarquent… D\'un côté, le volcanique Taiga Kagami fraîchement revenu des États-Unis où il a fait ses armes sous les arceaux. De l\'autre, le chétif et très effacé Tetsuya Kuroko dont on murmure qu\'il aurait fait partie de l\'équipe de basket du collège Teikô, la légendaire “Génération Miracle” ! Et si ces deux joueurs que tout oppose étaient amenés à se compléter à merveille sur le terrain ?\\nDes  films d\'animation en vue\\nComme dit précédemment, ce film n\'est que le premier volet de la Winter Cup. Il sera principalement axé sur mon duel préféré celui entre Tagami et Aomine. Kuroko impuissant face à son ancien coéquipier de la génération Miracle voit Tagami prendre une nouvelle dimension. Un combat entre deux monstres du basket capable d\'entrer dans la zone. Les prochaines parties de la Winter Cup devraient sortir tout de même rapidement car au Japon elles ont été lancées avec un intervalle d\'environ un mois chacune. Les fans de la série pourront également bientôt suivre sur leurs écrans le film Kuroko no Basket Extra Game prévu en mars 2017 dans les salles japonaises. A priori il devrait faire son apparition en France au printemps 2017. En attendant d\'en savoir plus sur sa sortie officielle chez nous, on vous laisse avec ce petit trailer.\\n', '2017-02-22 11:35:21'),
+(7, 'Kuroko no basket', 'Fiche technique :\\n\\nTitre  :  Koroko ‘s Basket\\nTitre alternatif : Kuroko no Basket\\nAuteur : Fujimaki Tadatoshi\\nAnnée : 2012/2013\\nFormat : Série tv\\nGenre : Comédie, drame, sport et shônen\\nRéalisation : Tada shunsuke\\nRelisation 3D : Isobe Kenji\\nScénariste : Hirabayashi Sawako, Nemoto Toshizo, Takagi Noboru et Tanimura Daishiro\\nCharacter design : Kikuchi Yoko\\nCompositeur : GRANRODEO, Hyadain et OLDCODEX\\nStudio : Production I.G\\nEditeur France : Kazé\\nSaison : 2\\nEpisodes : 25 (terminée) \\n\\nSynopsis :\\n \\nDans le collège Teikô, le club de Basketball était connu pour être l\'un des meilleurs du pays. Au sein de l\'établissement, cinq génies du sport étaient connus sous le nom de \"Génération des Miracles\" (Kiseki no Sedai). Toutefois, les cinq membres considéraient un sixième joueur comme un élément tout aussi prodigieux qu\'ils ne l\'étaient : le mystérieux joueur fantôme. À la fin de leur scolarité dans le collège de Teikô, les cinq prodiges se dispersèrent dans des lycées de renommés, désirant chacun mener leur équipe au sommet.\\n \\nC\'est ainsi que Tetsuya Kuroko (le joueur fantôme en question), un jeune garçon à l\'apparence chétive, ayant la faculté de diriger ailleurs l\'attention des autres pour se rendre invisible, intègre le modeste lycée de Seirin, fraîchement construit et avide de dénicher de nouveaux talents pour ses divers clubs de sport.\\nÀ son arrivée au lycée, la Coach de l\'équipe de Basket, Riko Aida prend les inscriptions des premières années. C\'est ainsi que Kuroko est devancé à son inscription par l\'imposant Taïga Kagami venant tout droit des États-Unis, et désireux de pratiquer le Basketball au Japon, bien qu\'ayant une très mauvaise impression de ce dernier.\\nRapidement, les nouveaux arrivés dans le club de Basketball sont testés dans un match face à l\'équipe du lycée. Kuroko fait alors démonstration de son immense talent de passeur alors que Kagami étale son talent inné et destructeur. Bien que tout les différencie, les deux joueurs finissent par sympathiser et deviennent une paire terriblement efficace.\\nKagami se promet de devenir le meilleur joueur du pays en surpassant les cinq membres de la Génération des Miracles, alors que Kuroko décide de devenir l\'ombre de Kagami en l\'aidant à réaliser son rêve. Plus tard, les deux amis avouent qu\'ils désirent, avant tout, faire de l\'équipe de basket-ball de Seirin la meilleure du Japon.\\nMon avis :\\nJe me suis dit encore un japanimée sur le sport  et cela va être nul. Je  dois dire que captain tsubasa (olive et tom en VF) m’a gonflé avec des matchs interminables. Je regarde donc les premiers épisodes sans trop attention et je suis surprise avec un histoire qui se tient la route. Je me suis dit aller les héros vont être stéréotypes et là encore je me suis trompé. Les personnages sont tous attachant et on a envie de mieux les connaitre. Le graphique est magnifique et je trouve la musique assez cool. La saison 1 m’a plue et j’ai vraiment envie de voir la seconde saison. Bref, c’est une jolie découverte dans l’ensemble et je suis la première étonnée.\\nLa saison 2 m\'a plus dans l\'ensemble et j\'ai vraiment envie de connaitre la suite des aventure de l\'équipe Seirin . Je ne suis pas objectif sur cet animée car j\'aiais lu les mangas Slam Dunk ou I\'ll CKBC qui m\'avait plu. Kuroko no basket est une version plus moderne. J\'ai vraiment envie de voir la saison 3 ( P.S : le mangas se termine en 30 tomes)\\n', '2017-02-22 14:48:46');
 
 --
 -- Contenu de la table `scan`
@@ -210,61 +144,6 @@ INSERT INTO `scan` (`id`, `title`, `nb_chapter`, `nb_volume`, `file_scan_name`, 
 (24, '14', 14, 14, '50fae1c99de18744fbf4697cfb653d48.jpeg', '2017-02-20 16:12:38', 'e2dab18b4b0fceabd127c7d94d6f3257.jpeg'),
 (25, '15', 15, 15, '5a504bc603090c9808f2da1de8133a79.jpeg', '2017-02-20 16:13:02', 'd379af78e3ba197f2335c3617b7de078.jpeg');
 
---
--- Index pour les tables exportées
---
-
---
--- Index pour la table `episode`
---
-ALTER TABLE `episode`
-  ADD PRIMARY KEY (`id`);
-
---
--- Index pour la table `fos_user`
---
-ALTER TABLE `fos_user`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `UNIQ_957A647992FC23A8` (`username_canonical`),
-  ADD UNIQUE KEY `UNIQ_957A6479A0D96FBF` (`email_canonical`),
-  ADD UNIQUE KEY `UNIQ_957A6479C05FB297` (`confirmation_token`);
-
---
--- Index pour la table `news`
---
-ALTER TABLE `news`
-  ADD PRIMARY KEY (`id`);
-
---
--- Index pour la table `scan`
---
-ALTER TABLE `scan`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables exportées
---
-
---
--- AUTO_INCREMENT pour la table `episode`
---
-ALTER TABLE `episode`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=152;
---
--- AUTO_INCREMENT pour la table `fos_user`
---
-ALTER TABLE `fos_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
---
--- AUTO_INCREMENT pour la table `news`
---
-ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
---
--- AUTO_INCREMENT pour la table `scan`
---
-ALTER TABLE `scan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -291,6 +291,14 @@ a:hover{
     display: table-cell;
 }
 
+.section-box-content.news{
+    padding: 50px;
+}
+
+.news-article{
+    padding: 20px 6px;
+}
+
 
 /*  ---------- PERSONNAGES ----------  */
 

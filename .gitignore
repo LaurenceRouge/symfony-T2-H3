@@ -19,6 +19,4 @@
 /web/uploads/episodes/*
 /.idea/*
 
-*.pdf
-
 *.xml

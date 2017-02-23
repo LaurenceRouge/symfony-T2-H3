@@ -9,14 +9,18 @@
     <!--  CONTENTS  -->
     <div class="container">
 
-            <div class="scans">
+            <div class="section-box-content">
                 <h1>SCANS</h1>
             </div>
-            <div class="sc_box">
+
+            <div class="section-box-content">
 
                 {% for item in menu %}
+
                     {% for it in item %}
+
                         <div class="scan-content">
+
                             <a href="/scan/{{ it.id }}">
                                 <img src="/uploads/scans/{{ it.thumbnail }}" alt="" class="picture-scan-content">
                             </a>
@@ -25,8 +29,11 @@
                                     <a href="/scan/{{ it.id }}">Tome n°{{ it.chapter }}</a>
                                 </div>
                             </div>
+
                         </div>
+
                     {% endfor %}
+
                 {% endfor %}
 
             </div>

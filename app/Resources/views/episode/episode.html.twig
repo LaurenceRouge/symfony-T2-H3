@@ -9,31 +9,46 @@
     <!--  CONTENTS  -->
 
     <div class="container">
-            <div class="episodes">
+
+            <div class="section-box-content">
                 <h1>ÉPISODES</h1>
             </div>
+
             <div class="episodes-content">
+
                 {% for item in menu %}
+
                     <div class="season-content">
+
                         <div class="season-title">
-                            <h1><a href="#">SAISON {{ item[0].season }}</a></h1>
+                            <h2><a href="#">SAISON {{ item[0].season }}</a></h2>
                             <div class="rect"></div>
                         </div>
+
                         {% for it in item %}
+
                                 <div class="episode-content">
+
                                     <a href="/episode/{{ it.id }}">
                                         <img src="/uploads/episodes/{{ it.thumbnail }}" alt="" class="picture-episode-content">
                                     </a>
+
                                     <div class="title-episode-content">
                                         <div>
                                             <a href="/episode/{{ it.id }}">Episode {{ it.id }}</a>
                                         </div>
                                     </div>
+
                                 </div>
+
                         {% endfor %}
+
                     </div>
+
                 {% endfor %}
+
             </div>
+
     </div>
 
     {% include 'footer.html.twig' %}

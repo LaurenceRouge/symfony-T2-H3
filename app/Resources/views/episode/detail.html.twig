@@ -2,30 +2,34 @@
 {% block title %}KUROKO'S - {{ episode.title }}{% endblock %}
 
 {% block body %}
+
     {% include 'header.html.twig' %}
+
     <div class="container">
-        <section>
-            <div class="entity-title">
-                <h1>{{ episode.title }}</h1>
+
+            <div class="box_title">
+                <h2>{{ episode.title }}</h2>
             </div>
+
             <div class="ep_box">
                 <div class="ep_box_content">
                     <video src="../uploads/episodes/{{ episode.fileVideo }}" controls></video>
                 </div>
             </div>
+
             <div class="new_content">
                 <div class="btn_left_right">
                     <a href="/episode/{{ episode.id - 1 }}" class="btn">Précédent</a>
                 </div>
                 <div class="select_center">
-
                 </div>
                 <div class="btn_left_right">
                     <a href="/episode/{{ episode.id + 1 }}" class="btn">Suivant</a>
                 </div>
             </div>
-        </section>
 
     </div>
+
     {% include 'footer.html.twig' %}
+
 {% endblock %}

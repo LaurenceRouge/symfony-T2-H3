@@ -2,118 +2,174 @@
 {% block title %}KUROKO'S - Personnages{% endblock %}
 
 {% block body %}
-    {% include 'header.html.twig' %}
-    <div class="container">
-        <div class="team title">
-            <h1>UNIVERS</h1>
-            <div class="synopsis">
-                C'est la rentrée au club de basket-ball du lycée Seirin et cette année, deux rookies se démarquent… D'un côté, le volcanique Taiga Kagami, fraîchement revenu des États-Unis où il a fait ses armes sous les arceaux. De l'autre, le chétif et très effacé Tetsuya Kuroko dont on murmure qu'il aurait fait partie de l'équipe de basket du collège Teikô, la légendaire “Génération Miracle” ! Et si ces deux joueurs que tout oppose étaient amenés à se compléter à merveille sur le terrain ?
 
-            </div>
+    {% include 'header.html.twig' %}
+
+    <div class="container">
+
+        <div class="section-box-content">
+            <h1>PERSONNAGES</h1>
         </div>
-        <div class="team miracle">
-            <div class="team-header">
+
+        <div class="section-box-content miracle">
+
+            <div class="team-title">
                 <h2>Génération Miracle</h2>
                 <div class="rect" style="background-color: #86C0EF"></div>
             </div>
+
             <div class="team-prez">
+
                 {% for api in apis %}
+
                     {% if api.team == "Génération Miracles" %}
+
                         <div class="character">
                             <img src="{{ api.img }}" alt="">
                             <div class="character-name" style="background-color: #86C0EF">{{ api.name }}</div>
                         </div>
+
                     {% endif %}
+
                 {% endfor %}
+
             </div>
+
         </div>
 
-        <div class="team seirin">
-            <div class="team-header">
-            <h2>Lycée Seirin</h2>
-            <div class="rect" style="background-color: #382C2F"></div>
+        <div class="section-box-content seirin">
+
+            <div class="team-title">
+                <h2>Lycée Seirin</h2>
+                <div class="rect" style="background-color: #382C2F"></div>
             </div>
+
             <div class="team-prez">
+
                 {% for api in apis %}
+
                     {% if api.team == "Lycée Seirin" %}
+
                         <div class="character">
                             <img src="{{ api.img }}" alt="">
                             <div class="character-name" style="background-color: #382C2F">{{ api.name }}</div>
                         </div>
+
                     {% endif %}
+
                 {% endfor %}
+
             </div>
+
         </div>
 
-        <div class="team kaijo">
-            <div class="team-header">
-            <h2>Lycée Kaijō</h2>
-            <div class="rect" style="background-color: #2B54B0"></div>
+        <div class="section-box-content kaijo">
+
+            <div class="team-title">
+                <h2>Lycée Kaijō</h2>
+                <div class="rect" style="background-color: #2B54B0"></div>
             </div>
+
             <div class="team-prez">
+
                 {% for api in apis %}
+
                     {% if api.team == "Lycée Kaijō" %}
+
                         <div class="character">
                             <img src="{{ api.img }}" alt="">
                             <div class="character-name" style="background-color: #2B54B0">{{ api.name }}</div>
                         </div>
+
                     {% endif %}
+
                 {% endfor %}
+
             </div>
+
         </div>
 
-        <div class="team shutoku">
-            <div class="team-header">
-            <h2>Lycée Shūtoku</h2>
-            <div class="rect" style="background-color: #DB8B5A"></div>
+        <div class="section-box-content shutoku">
+
+            <div class="team-title">
+                <h2>Lycée Shūtoku</h2>
+                <div class="rect" style="background-color: #DB8B5A"></div>
             </div>
+
             <div class="team-prez">
+
                 {% for api in apis %}
+
                     {% if api.team == "Lycée Shūtoku" %}
+
                         <div class="character">
                             <img src="{{ api.img }}" alt="">
                             <div class="character-name" style="background-color: #DB8B5A">{{ api.name }}</div>
                         </div>
+
                     {% endif %}
+
                 {% endfor %}
+
             </div>
+
         </div>
 
-        <div class="team too">
-            <div class="team-header">
-            <h2>Académie Tōō</h2>
-            <div class="rect" style="background-color: #98765C"></div>
+        <div class="section-box-content too">
+
+            <div class="team-title">
+                <h2>Académie Tōō</h2>
+                <div class="rect" style="background-color: #98765C"></div>
             </div>
+
             <div class="team-prez">
+
                 {% for api in apis %}
+
                     {% if api.team == "Académie Tōō" %}
+
                         <div class="character">
                             <img src="{{ api.img }}" alt="">
                             <div class="character-name" style="background-color: #98765C">{{ api.name }}</div>
                         </div>
+
                     {% endif %}
+
                 {% endfor %}
+
             </div>
+
         </div>
 
-        <div class="team yosen">
-            <div class="team-header">
-            <h2>Lycée Kirisaki Daīchi</h2>
-            <div class="rect" style="background-color: #2B767C"></div>
+        <div class="section-box-content yosen">
+
+            <div class="team-title">
+                <h2>Lycée Kirisaki Daīchi</h2>
+                <div class="rect" style="background-color: #2B767C"></div>
             </div>
+
             <div class="team-prez">
+
                 {% for api in apis %}
+
                     {% if api.team == "Lycée Kirisaki Daīchi" %}
+
                         <div class="character">
                             <img src="{{ api.img }}" alt="">
                             <div class="character-name" style="background-color: #2B767C">{{ api.name }}</div>
                         </div>
+
                     {% endif %}
+
                 {% endfor %}
+
             </div>
+
         </div>
 
     {% include 'footer.html.twig' %}
+
     </div>
+
 {% endblock %}
 

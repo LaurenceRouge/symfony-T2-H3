@@ -158,11 +158,13 @@ p{
 }
 
 h1{
-    font-size: 20px;
-    display: inline-block;
-    color: #5C5C5C;
+    color: #ddd;
+    font-size: 100px;
+    font-weight: bold;
+    padding: 0 40px;
 }
 h2{
+
     font-size: 16px;
     font-family: Gotham, Arial, Helvetica, sans-serif;
     font-weight: lighter;
@@ -221,6 +223,10 @@ h4{
     text-transform: inherit;
 }
 
+.synopsis{
+    padding: 30px 50px;
+}
+
 .home-news-content{
 
 }
@@ -257,36 +263,26 @@ h4{
 }
 
 
-/* UNIVERS */
+/* PERSONNAGES */
 
-.team{
+.section-box-content{
     padding: 15px;
     margin: 35px 40px;
     background-color: #fff;
     box-shadow: 1px 1px 1px #888888;
 }
 
-.season-title, .team-header{
+.team-title{
     display:flex;
     align-items: center;
 }
 
-.team h1{
-    color: #ddd;
-    font-size: 100px;
-    font-weight: bold;
-    padding: 0 40px;
-}
-
-.team h2{
+.section-box-content h2{
     text-transform: uppercase;
     padding: 20px 6px;
-    width: 30%;
+    width: 17%;
     display: inline;
-}
-
-.team .synopsis{
-    padding: 30px 50px;
+    font-size: 25px;
 }
 
 .team-prez{
@@ -309,6 +305,41 @@ h4{
 
 /* ÉPISODE */
 
+.episodes, .scans{
+    padding: 15px;
+    margin: 0px 40px;
+    margin-top: 35px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.season-title{
+    display:flex;
+    align-items: center;
+}
+
+.season-title h2{
+    text-transform: uppercase;
+    padding: 20px 6px;
+    width: 17%;
+    display: inline;
+    font-size: 25px;
+}
+
+.season-title .rect, .team-title .rect{
+    height:3px;
+    width:100%;
+    background-color: #000;
+}
+
+.season-content{
+    display: block;
+    background-color: #fff;
+    padding: 30px;
+    margin: 35px 40px;
+    box-shadow: 1px 1px 1px #888888;
+}
+
 .episode-content{
     position: relative;
     display: inline-block;
@@ -318,43 +349,6 @@ h4{
 .picture-episode-content{
     position: relative;
     width: 170px;
-}
-
-.season-title .rect, .team .rect{
-    height:3px;
-    width:100%;
-    background-color: #000;
-}
-
-.episodes, .scans{
-    padding: 15px;
-    margin: 0px 40px;
-    margin-top: 35px;
-    background-color: #fff;
-    box-shadow: 1px 1px 1px #888888;
-}
-
-.episodes h1{
-    color: #ddd;
-    font-size: 100px;
-    font-weight: bold;
-    padding: 0 40px;
-}
-
-.season-title h1{
-    text-transform: uppercase;
-    padding: 20px 6px;
-    width: 17%;
-    display: inline;
-    font-size: 25px;
-}
-
-.season-content{
-    display: block;
-    background-color: #fff;
-    padding: 30px;
-    margin: 35px 40px;
-    box-shadow: 1px 1px 1px #888888;
 }
 
 .ep_box{
@@ -396,13 +390,6 @@ h4{
     width: 130px;
 }
 
-.scans h1{
-    color: #ddd;
-    font-size: 100px;
-    font-weight: bold;
-    padding: 0 40px;
-}
-
 .sc_box{
     position:relative;
     margin:auto;
@@ -427,7 +414,18 @@ h4{
 
 }
 
-/* episode & scan page button */
+/* episode & scan page */
+
+.box_title{
+    color: #282828;
+    text-align: left;
+    font-size: 25px;
+    width:740px;
+    margin:auto;
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(0,0,0, .2);
+    position: relative;
+}
 
 .btn_left_right{
     height:30px;

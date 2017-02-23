@@ -37,7 +37,7 @@
                 <div class="news-box">
                     {% for new in news|reverse|slice(0, 5)%}
 
-                    <a href="/news">
+                    <a href="/news#{{ new.id }}">
                         <div class="title-content">
                             <div>{{ new.title }}</div>
                         </div>

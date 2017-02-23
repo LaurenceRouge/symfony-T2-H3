@@ -15,18 +15,13 @@
 
         <!--  NEWS  -->
         <div class="content news">
-            <div class="content__title">
-                <img src="/dist/images/iconscan.png" alt="">
-                <h2>Actualités</h2>
-            </div>
-            <!--<img src="/dist/images/Actu.jpg" alt="">-->
 
-            <div>
-                {% for new in news|reverse %}
-                    <h3>{{ new.title }}</h3>
-                    <span>{{ new.content }}</span>
-                {% endfor %}
-            </div>
+            {% for new in news|reverse %}
+                <div class="section-box-content" id="{{ new.id }}">
+                    <h2>{{ new.title }}</h2>
+                    <div>{{ new.content }}</div>
+                </div>
+            {% endfor %}
 
         </div>
 

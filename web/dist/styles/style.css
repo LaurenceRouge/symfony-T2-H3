@@ -253,6 +253,11 @@ h4{
 
 .home-news-content .title-content:hover{
     background-color: #B00C0C;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 .home-content{

@@ -16,7 +16,7 @@ Config Requirements
 - php7.1.0 
 - composer
 - install [kuroko-api](https://github.com/LaurenceRouge/kuroko-api)
-
+ 
 
 Install
 -------

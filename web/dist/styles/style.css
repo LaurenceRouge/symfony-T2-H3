@@ -298,6 +298,8 @@ a:hover{
 
 .news-article{
     padding: 20px 6px;
+    white-space: pre-wrap;
+    background-color: #fff;
 }
 
 

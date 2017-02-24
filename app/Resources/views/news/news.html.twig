@@ -19,7 +19,7 @@
             {% for new in news|reverse %}
                 <div class="section-box-content news" id="{{ new.id }}">
                     <h2>{{ new.title }}</h2>
-                    <div class="news-article">{{ new.content }}</div>
+                    <pre class="news-article">{{ new.content }}</pre>
                 </div>
             {% endfor %}
 

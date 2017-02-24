@@ -162,6 +162,7 @@ h1{
     font-size: 100px;
     font-weight: bold;
     padding: 0 40px;
+    opacity: 0.3;
 }
 h2{
 
@@ -295,6 +296,10 @@ a:hover{
 
 .section-box-content.news{
     padding: 50px;
+}
+
+.section-box-content h2{
+    color: #00a3ea;
 }
 
 .news-article{

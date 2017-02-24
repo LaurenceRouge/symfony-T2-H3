@@ -212,8 +212,8 @@ h4{
     position: relative;
 }
 
-.home-section .see-news{
-    font-size: .8em;
+.home-section .see-more{
+    font-size: 1em;
     float: right;
     position: absolute;
     top: 70px;

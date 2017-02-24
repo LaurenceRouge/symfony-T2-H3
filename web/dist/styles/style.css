@@ -234,7 +234,7 @@ h4{
 
 .news-img{
     width: 60%;
-    margin-top: -12px;
+    margin-top: -10px;
 }
 .home-news-content .news-box{
 
@@ -244,7 +244,7 @@ h4{
     width: 100%;
     margin-top: -5px;
     border: 2px solid black;
-    line-height: 210%;
+    line-height: 32px;
     display: block;
     padding: 20px;
     background-color: #252525;

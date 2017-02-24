@@ -209,6 +209,15 @@ h4{
     padding: 30px;
     margin: 20px;
     box-shadow: 1px 1px 1px #888888;
+    position: relative;
+}
+
+.home-section .see-news{
+    font-size: .8em;
+    float: right;
+    position: absolute;
+    top: 70px;
+    right: 50px;
 }
 
 .icon-content{

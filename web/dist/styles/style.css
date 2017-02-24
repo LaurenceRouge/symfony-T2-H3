@@ -48,8 +48,6 @@ html, body{
 nav {
     height: 50px;
     background: #da1c1c;
-    border-top: 3px solid #fefefe;
-    border-bottom: 3px solid #fefefe;
     background-image: -webkit-linear-gradient(top, #da1c1c, #B00C0C);
     background-image: -moz-linear-gradient(top, #da1c1c, #B00C0C);
     background-image: -o-linear-gradient(top, #da1c1c, #B00C0C);
@@ -62,11 +60,12 @@ nav a {
     font-weight: 900;
     display: block;
     padding: 0 20px;
-    line-height: 44px;
+    line-height: 50px;
     color: #fefefe;
     text-decoration: none;
     cursor: pointer;
     text-shadow: 0 1px #2e3131;
+    height: 100%;
 
     -webkit-transition: 0.3s ease-out;
     -moz-transition: 0.3s ease-out;
@@ -93,7 +92,7 @@ nav a:hover {
     text-decoration: none;
     color: #fefefe;
     padding: 0 21px;
-    line-height: 44px;
+    line-height: 48px;
     border-bottom: 4px solid #fefefe;
 
 }
